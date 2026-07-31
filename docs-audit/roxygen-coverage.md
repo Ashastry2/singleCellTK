@@ -21,10 +21,32 @@ per-parameter finding on them would be unreliable).
 | `@param` documenting a parameter that doesn't exist | **0** ✅ |
 | Exports in `NAMESPACE` with no definition in `R/` | **0** ✅ |
 | `@export` in roxygen but absent from `NAMESPACE` | **0** ✅ |
-| Missing `@return` | **24** (10%) |
+| Missing `@return` | **24** (10%) — ⚠️ **corrected to 3**, see below |
 | Missing `@examples` | **49** (20%) |
 | Missing `@seealso` | **216** (86%) |
 | Missing `@family` | **251** (100%) |
+
+> ### ⚠️ Two corrections, made while applying these fixes in Step 4
+>
+> **1. `@return` — the real gap was 3, not 24.** The measurement counted tags per *roxygen
+> block*. It did not account for `@rdname`: 21 of the 24 share a documentation topic with a
+> parent function that *does* document `@return`, and roxygen merges them, so their rendered
+> help pages were never missing it. Only `importGeneSetsFromMSigDB`, `importMitoGeneSet`, and
+> `sctkListGeneSetCollections` were genuinely undocumented. All three are now fixed.
+>
+> **2. The pkgdown reference index was never "a flat alphabetical list."** `_pkgdown.yml`
+> already organizes the reference into **21 topical sections** (Quality Control,
+> Decontamination, Clustering, and so on). The claim below that users "cannot find anything"
+> overstated the problem considerably.
+>
+> The `@family` work remains worthwhile for a different reason than originally argued: it
+> generates *per-page* cross-links ("Other run functions: …") that the section structure does
+> not provide, and it puts the grouping in the source where a contributor adding a function
+> will see it, rather than in a YAML file they may not think to edit.
+>
+> A real defect *was* found in `_pkgdown.yml` while checking this: **12 exported functions
+> appeared in no reference section at all**, which fails a pkgdown build. Now fixed —
+> all 251 are covered.
 
 **The headline is that the baseline is much better than expected.** Parameter documentation
 is complete — every formal argument of every exported function has a `@param`, and there are

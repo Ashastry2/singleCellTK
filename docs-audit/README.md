@@ -25,9 +25,13 @@ syntactically, or `grep`. Where a claim could not be established statically it i
 1. **207 broken images** — every image reference in every article fails in a clean pkgdown
    build. Recoverable: all 207 resolve against the tracked `docs/articles/ui_screenshots/`.
    ([articles.md](articles.md) §2)
-2. **251 exports, zero `@family` tags** — the pkgdown reference is a flat alphabetical list.
-   82% of exports already follow a prefix convention, so the grouping is mechanical to add.
+2. **251 exports, zero `@family` tags**, and **12 exports in no `_pkgdown.yml` reference
+   section at all** — the latter fails a pkgdown build. 82% of exports already follow a prefix
+   convention, so the grouping was mechanical to add.
    ([roxygen-coverage.md](roxygen-coverage.md) §1)
+   *Corrected: an earlier version of this file called the reference index "a flat alphabetical
+   list of 251 entries". It is not — `_pkgdown.yml` already defines 21 topical sections. See
+   the correction note in `roxygen-coverage.md`.*
 3. **A dead function pins four dependencies.** `.testFunctions()` at `R/miscFunctions.R:146`
    is uncalled and exists only to suppress the `R CMD check` unused-import NOTE — silencing
    the exact signal that identifies unused dependencies. ([dependencies.md](dependencies.md) §1)
