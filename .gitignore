@@ -13,4 +13,10 @@ vignettes/articles/raw_data/*
 raw_data/*
 *.rds
 .RDataTmp
-docs
+
+# NOTE: 'docs' was previously ignored wholesale, but the built pkgdown site
+# under docs/ was committed before that rule was added, so ~771 files there are
+# tracked and the rule never had its intended effect. All it did was block new
+# hand-written documentation (docs/adr/, docs/architecture.md) from being added.
+# Removed deliberately. See docs-audit/articles.md for the image-path problem
+# this inversion caused.
