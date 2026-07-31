@@ -76,6 +76,7 @@
 #' data(scExample, package = "singleCellTK")
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runDecontX(sce[,sample(ncol(sce),20)])
+#' @family run functions
 #' @export
 runDecontX <- function(inSCE,
     sample = NULL,

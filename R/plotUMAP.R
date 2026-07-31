@@ -11,6 +11,7 @@
 #' @param useAssay Indicate which assay to use. The default is "logcounts"
 #'
 #' @return a UMAP plot of the reduced dimensions.
+#' @family plot functions
 #' @export
 #'
 #' @examples

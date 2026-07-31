@@ -48,6 +48,7 @@
 #' mat <- readSingleCellMatrix(system.file("extdata/hgmm_1k_v3_20x20/outs/",
 #'     "filtered_feature_bc_matrix/matrix.mtx.gz", package = "singleCellTK"))
 #' @importFrom reticulate import
+#' @family import functions
 #' @export
 readSingleCellMatrix <- function(file,
     class = c("Matrix", "matrix"),

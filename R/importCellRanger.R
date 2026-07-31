@@ -591,6 +591,7 @@
 #'     sampleDirs = "hgmm_1k_v3_20x20",
 #'     sampleNames = "hgmm1kv3",
 #'     dataType = "filtered")
+#' @family import functions
 #' @export
 importCellRanger <- function(
     cellRangerDirs = NULL,
@@ -701,6 +702,7 @@ importCellRangerV2 <- function(
 #'     dataDir = system.file("extdata/pbmc_4k_v2_20x20/outs/",
 #'         "filtered_gene_bc_matrices/GRCh38", package = "singleCellTK"),
 #'     sampleName = "pbmc4k_20")
+#' @family import functions
 #' @export
 importCellRangerV2Sample <- function(
     dataDir = NULL,
@@ -791,6 +793,7 @@ importCellRangerV3 <- function(
 #'     dataDir = system.file("extdata/hgmm_1k_v3_20x20/outs/",
 #'         "filtered_feature_bc_matrix", package = "singleCellTK"),
 #'     sampleName = "hgmm1kv3")
+#' @family import functions
 #' @export
 importCellRangerV3Sample <- function(
     dataDir = "./",

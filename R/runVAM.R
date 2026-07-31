@@ -34,6 +34,7 @@
 #' \link{getPathwayResultNames} and \link{getGenesetNamesFromCollection} for
 #' available related information in \code{inSCE}.
 #' @author Nida Pervaiz
+#' @family run functions
 #' @export
 #' @examples
 #' data(scExample, package = "singleCellTK")

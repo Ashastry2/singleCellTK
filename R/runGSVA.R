@@ -14,6 +14,7 @@
 #' @return A \linkS4class{SingleCellExperiment} object with pathway activity 
 #' scores from GSVA stored in \code{reducedDim} as 
 #' \code{GSVA_geneSetCollectionName_Scores}.
+#' @family run functions
 #' @export
 #' @examples
 #' data(scExample, package = "singleCellTK")

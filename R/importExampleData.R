@@ -45,6 +45,7 @@
 #' @return The specified \link[SingleCellExperiment]{SingleCellExperiment} object.
 #' @examples
 #' sce <- importExampleData("pbmc3k")
+#' @family import functions
 #' @export
 #' @importFrom SummarizedExperiment colData rowData colData<- assay assays
 importExampleData <- function(dataset, class = c("Matrix", "matrix"),

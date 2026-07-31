@@ -139,6 +139,7 @@ setMethod("listTSCANTerminalNodes", signature(x = "SingleCellExperiment"),
 #' @return The input \code{inSCE} object with pseudotime ordering of the cells
 #' along the paths and the cluster label stored in \code{colData}, and other
 #' unstructured information in \code{metadata}.
+#' @family run functions
 #' @export
 #' @author Nida Pervaiz
 #' @examples
@@ -235,6 +236,7 @@ runTSCAN <- function(inSCE,
 #' Required.
 #' @return A \code{.ggplot} object with the pseudotime ordering of the cells
 #' colored on a cell 2D embedding, and the MST path drawn on it.
+#' @family plot functions
 #' @export
 #' @author Nida Pervaiz
 #' @examples
@@ -277,6 +279,7 @@ plotTSCANResults <- function(inSCE, useReducedDim = "UMAP") {
 #' @param discardCluster Cluster(s) which are not of use or masks other
 #' interesting effects can be discarded. Default \code{NULL}.
 #' @return The input \code{inSCE} with results updated in \code{metadata}.
+#' @family run functions
 #' @export
 #' @author Nida Pervaiz
 #' @examples
@@ -346,6 +349,7 @@ runTSCANDEG <- function(inSCE,
 #' \code{FALSE} for no display. Variable name in \code{rowData} to indicate ID
 #' type. \code{"rownames"} or \code{TRUE} for using \code{rownames(inSCE)}.
 #' @return A ComplexHeatmap in \code{.ggplot} class
+#' @family plot functions
 #' @export
 #' @author Nida Pervaiz
 #' @importFrom S4Vectors metadata
@@ -476,6 +480,7 @@ plotTSCANPseudotimeHeatmap <- function(inSCE,
 #' values indicates \code{rowData} variable.
 #' @return A \code{.ggplot} object with the facets of the top genes. Expression
 #' on y-axis, pseudotime on x-axis.
+#' @family plot functions
 #' @export
 #' @author Nida Pervaiz
 #' @importFrom utils head
@@ -539,6 +544,7 @@ plotTSCANPseudotimeGenes <- function(inSCE,
 #' @param fdrThreshold Only out put DEGs with FDR value smaller than this value.
 #' Default \code{0.05}.
 #' @return The input \code{inSCE} with results updated in \code{metadata}.
+#' @family run functions
 #' @export
 #' @author Nida Pervaiz
 #' @examples
@@ -632,6 +638,7 @@ runTSCANClusterDEAnalysis <- function(inSCE,
 #' @return
 #' \item{combinePlot = "all"}{A \code{.ggplot} object}
 #' \item{combinePlot = "none"}{A list of \code{.ggplot}}
+#' @family plot functions
 #' @export
 #' @author Nida Pervaiz
 #' @importFrom utils head
@@ -708,6 +715,7 @@ plotTSCANClusterPseudo <- function(inSCE, useCluster, useReducedDim = "UMAP",
 #' @return A \code{.ggplot} object of cell scatter plot, colored by the
 #' expression of a gene identified by \code{\link{runTSCANClusterDEAnalysis}},
 #' with the layer of trajectory.
+#' @family plot functions
 #' @export
 #' @author Yichen Wang
 #' @importFrom S4Vectors metadata
@@ -779,6 +787,7 @@ plotTSCANClusterDEG <- function(
 #' while \code{"none"} will output a list of plots. Default \code{"all"}.
 #' @return A \code{.ggplot} object of cell scatter plot, colored by the
 #' expression of a gene of interest, with the layer of trajectory.
+#' @family plot functions
 #' @export
 #' @author Yichen Wang
 #' @importFrom S4Vectors metadata

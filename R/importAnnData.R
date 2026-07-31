@@ -118,6 +118,7 @@
 #' sce <- importAnnData(sampleDirs = file.path,
 #'                      sampleNames = 'pbmc3k_20by20')
 #' }
+#' @family import functions
 #' @export
 importAnnData <- function(sampleDirs = NULL,
                           sampleNames = NULL,

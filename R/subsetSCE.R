@@ -43,6 +43,7 @@
 #' rowData(sce)$isMito <- ifelse(grepl("^MT-", rowData(sce)$feature_name),
 #'                               "yes", "no")
 #' sce <- subsetSCERows(sce, rowData = "isMito == 'yes'")
+#' @family SCE manipulation
 #' @export
 #' @importFrom SummarizedExperiment assays assays<-
 subsetSCERows <- function(inSCE, index = NULL, bool = NULL, rowData = NULL,
@@ -136,6 +137,7 @@ subsetSCERows <- function(inSCE, index = NULL, bool = NULL, rowData = NULL,
 #' @examples
 #' data(scExample)
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
+#' @family SCE manipulation
 #' @export
 subsetSCECols <- function(inSCE, index = NULL, bool = NULL, colData = NULL) {
 

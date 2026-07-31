@@ -262,6 +262,7 @@
 #' \item{$select}{the cell selection indices (logical) for each condition}
 #' \item{$result}{a \code{data.frame} of the DEGs table}
 #' \item{$method}{the method used}
+#' @family run functions
 #' @export
 runDEAnalysis <- function(inSCE, method = 'wilcox', ...){
   validMethods <- c('wilcox', 'MAST', 'DESeq2', 'Limma', 'ANOVA')

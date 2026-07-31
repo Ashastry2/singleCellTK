@@ -39,6 +39,7 @@
 #' HVG selection updated in \code{rowData}, and related parameter updated in
 #' \code{metadata}. If \code{altExp} is \code{TRUE}, an \code{altExp} is also
 #' added}
+#' @family accessor functions
 #' @export
 #' @author Irzam Sarfraz, Yichen Wang
 #' @examples

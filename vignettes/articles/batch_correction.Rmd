@@ -218,12 +218,15 @@ If the cell typing is already given, it is strongly recommended to specify `shap
 | FastMNN [@Haghverdi2018]  | `runFastMNN()` | log-normalized | `reducedDim` |
 | MNN [@Haghverdi2018] | `runMNNCorrect()` | log-normalized | `assay` |
 | Harmony [@Korsunsky2019]  | `runHarmony()` | PCA | `reducedDim` |
-| LIGER [@LiuL2020] | `runLIGER()` | raw counts | `reducedDim` |
+| LIGER [@LiuL2020] | `runLIGER()` — *not currently available* | raw counts | `reducedDim` |
 | Limma [@Ritchie2015] | `runLimmaBC()` | log-normalized | `assay` |
 | Scanorama [@Hie2019] | `runSCANORAMA()` | log-normalized | `assay` |
 | scMerge [@LinY2019] | `runSCMerge()` | log-normalized | `assay` |
 | Seurat Integration [@Butler2018a] | `runSeuratIntegration()` | raw counts | `altExp` |
 | ZINBWaVE [@Risso2018] | `runZINBWaVE()` | raw counts | `reducedDim` |
+
+*Note: `runLIGER()` is listed for completeness but is not currently exported — the
+implementation is commented out in `R/runBatchCorrection.R`. Calling it will fail.*
 
 ````{=html} 
   </details>

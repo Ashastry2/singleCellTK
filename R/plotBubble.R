@@ -21,6 +21,7 @@
 #' plotBubble(inSCE=sce, useAssay="counts", featureNames=c("B2M", "MALAT1"),
 #' displayName="feature_name", groupNames="type", title="cell type test",
 #' xlab="gene", ylab="cluster", colorLow="white", colorHigh="blue")
+#' @family plot functions
 #' @export
 plotBubble <- function(inSCE, useAssay="logcounts", featureNames, displayName=NULL, groupNames="cluster", title="", xlab=NULL, ylab=NULL, colorLow="white", colorHigh="blue", scale = FALSE){
   metrics <- runClusterSummaryMetrics(inSCE, useAssay=useAssay, featureNames=featureNames, 

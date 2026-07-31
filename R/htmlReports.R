@@ -13,6 +13,7 @@
 #' sce <- runDropletQC(sce)
 #' reportDropletQC(inSCE = sce)
 #' }
+#' @family report functions
 #' @export
 reportDropletQC <- function(inSCE, output_file = NULL,
                                    output_dir = NULL,
@@ -54,6 +55,7 @@ reportDropletQC <- function(inSCE, output_file = NULL,
 #' sce <- runCellQC(sce)
 #' reportCellQC(inSCE = sce)
 #' }
+#' @family report functions
 #' @export
 reportCellQC <- function(inSCE, output_file = NULL,
                                 output_dir = NULL,
@@ -94,6 +96,7 @@ reportCellQC <- function(inSCE, output_file = NULL,
 #' sce <- runQuickUMAP(sce)
 #' reportQCTool(inSCE = sce, algorithm = "DecontX")
 #' }
+#' @family report functions
 #' @export
 reportQCTool <- function(inSCE, algorithm=c("BarcodeRankDrops",
                                             "EmptyDrops",
@@ -180,6 +183,7 @@ reportQCTool <- function(inSCE, algorithm=c("BarcodeRankDrops",
 #' \code{NULL} the file is stored to the current working directory.
 #' Default \code{NULL}.
 #' @return Saves the HTML report in the specified output directory.
+#' @family report functions
 #' @export
 reportDiffExp <- function(inSCE, study, useReducedDim,
                           featureDisplay = NULL,
@@ -214,6 +218,7 @@ reportDiffExp <- function(inSCE, study, useReducedDim,
 #' Default \code{NULL}.
 #' @return An HTML file of the report will be generated at the path specified
 #' in the arguments.
+#' @family report functions
 #' @export
 reportFindMarker <- function(inSCE, output_file = NULL, output_dir = NULL) {
 
@@ -295,6 +300,7 @@ reportFindMarker <- function(inSCE, output_file = NULL, output_dir = NULL) {
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeuratRun <- function(inSCE,
                             biological.group = NULL,
@@ -436,6 +442,7 @@ reportSeuratRun <- function(inSCE,
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeuratResults <- function(inSCE,
                                 biological.group = NULL,
@@ -550,6 +557,7 @@ reportSeuratResults <- function(inSCE,
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeuratDimRed <- function(inSCE,
                                pc.count = 50,
@@ -628,6 +636,7 @@ reportSeuratDimRed <- function(inSCE,
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeuratNormalization <- function(inSCE,
                                outputFile = NULL,
@@ -701,6 +710,7 @@ reportSeuratNormalization <- function(inSCE,
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeuratFeatureSelection <- function(inSCE,
                                          variable.features = 2000,
@@ -772,6 +782,7 @@ reportSeuratFeatureSelection <- function(inSCE,
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeuratScaling <- function(inSCE,
                            outputFile = NULL,
@@ -858,6 +869,7 @@ reportSeuratScaling <- function(inSCE,
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeuratClustering <- function(inSCE,
                                    biological.group = NULL,
@@ -966,6 +978,7 @@ reportSeuratClustering <- function(inSCE,
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeuratMarkerSelection <- function(inSCE,
                                         biological.group = NULL,
@@ -1102,6 +1115,7 @@ reportSeuratMarkerSelection <- function(inSCE,
 #'
 #' @return A \code{\link[SingleCellExperiment]{SingleCellExperiment}} object
 #'  with computations stored.
+#' @family report functions
 #' @export
 reportSeurat <- function(
   inSCE,
@@ -1225,6 +1239,7 @@ reportSeurat <- function(
 #'  should be displayed or not. Default is \code{TRUE}.
 #' @return An HTML file of the report will be generated at the path specified
 #' in the arguments.
+#' @family report functions
 #' @export
 reportDiffAbundanceFET <-
     function(inSCE,
@@ -1274,6 +1289,7 @@ reportDiffAbundanceFET <-
 #'  should be displayed or not. Default is \code{TRUE}.
 #' @return An HTML file of the report will be generated at the path specified
 #' in the arguments.
+#' @family report functions
 #' @export
 reportClusterAbundance <- function(inSCE,
                                    cluster,

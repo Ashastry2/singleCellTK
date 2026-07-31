@@ -68,6 +68,7 @@
 #' @param verbose Logical. Whether to print log messages. Default \code{TRUE}.
 #' @return A \linkS4class{SingleCellExperiment} object with UMAP computation
 #' updated in \code{reducedDim(inSCE, reducedDimName)}.
+#' @family run functions
 #' @export
 #' @examples
 #' data(scExample, package = "singleCellTK")

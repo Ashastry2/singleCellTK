@@ -220,6 +220,7 @@
 #'     samples = "pbmc_1k_50x50",
 #'     prefix = "pbmc_1k",
 #'     combinedSample = FALSE)
+#' @family import functions
 #' @export
 importSEQC <- function(
     seqcDirs = NULL,

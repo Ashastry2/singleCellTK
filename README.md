@@ -1,6 +1,14 @@
 # The Single Cell Tool Kit
 
-[![BioC-check](https://github.com/compbiomed/singleCellTK/actions/workflows/BioC-check.yaml/badge.svg?branch=master)](https://github.com/compbiomed/singleCellTK/actions/workflows/BioC-check.yaml) [![R-CMD-check](https://github.com/compbiomed/singleCellTK/actions/workflows/R-CMD-check.yaml/badge.svg?branch=master)](https://github.com/compbiomed/singleCellTK/actions/workflows/R-CMD-check.yaml) [![codecov](https://codecov.io/gh/compbiomed/singleCellTK/branch/devel/graph/badge.svg)](https://codecov.io/gh/compbiomed/singleCellTK)
+[![BioC-check](https://github.com/Ashastry2/singleCellTK/actions/workflows/BioC-check.yaml/badge.svg)](https://github.com/Ashastry2/singleCellTK/actions/workflows/BioC-check.yaml) [![R-CMD-check](https://github.com/Ashastry2/singleCellTK/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Ashastry2/singleCellTK/actions/workflows/R-CMD-check.yaml)
+
+> **This is a fork.** `Ashastry2/singleCellTK` diverges from the Bioconductor upstream at
+> [compbiomed/singleCellTK](https://github.com/compbiomed/singleCellTK). Issues and pull
+> requests filed here concern this fork. Installing via `BiocManager` (below) gets you the
+> **upstream** release, not this fork — see [CONTRIBUTING.md](CONTRIBUTING.md) to build from
+> source. Documentation, contributor guidance, and architecture decisions specific to this
+> fork are in [`docs/`](docs/), and a static audit of the package is in
+> [`docs-audit/`](docs-audit/).
 
 The Single Cell Toolkit (SCTK) in the *singleCellTK* R package is an analysis platform that provides an **R interface to several popular single-cell RNA-sequencing (scRNAseq) data preprocessing, quality control, analysis, and visualization tools**. SCTK imports raw or filtered counts from various scRNAseq preprocessing tools such as 10x CellRanger, BUStools, Optimus, STARSolo, and more. By integrating several publicly available tools written in R or Python, SCTK can be used to perform extensive quality control including doublet detection, ambient RNA removal. SCTK integrates analysis workflows from popular tools such as Seurat and Bioconductor/OSCA into a single unified framework. Results from various workflows can be summarized and easily shared using comprehensive HTML reports. Lastly, data can be exported to Seurat or AnnData object to allow for seamless integration with other downstream analysis workflows.
 
@@ -53,4 +61,4 @@ If you use SCTK for analysis in the Rconsole or the interactive graphical user i
 
 ## Report Issues
 
-If you face any difficulty in installing or have identified a bug in the toolkit, please feel free to open up an [Issue](https://github.com/compbiomed/singleCellTK/issues) on GitHub. Questions about how to best analyze your scRNA-seq data can be asked in the [Discussions](https://github.com/compbiomed/singleCellTK/discussions) page on GitHub.
+If you face any difficulty in installing or have identified a bug in the toolkit, please feel free to open up an [Issue](https://github.com/Ashastry2/singleCellTK/issues) on GitHub. Questions about how to best analyze your scRNA-seq data can be asked in the [Discussions](https://github.com/Ashastry2/singleCellTK/discussions) page on GitHub.

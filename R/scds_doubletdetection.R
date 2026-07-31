@@ -29,6 +29,7 @@
 #' data(scExample, package = "singleCellTK")
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runCxds(sce)
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment colData colData<- assay
 #' @importFrom SingleCellExperiment counts<-
@@ -159,6 +160,7 @@ runCxds <- function(
 #' data(scExample, package = "singleCellTK")
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runBcds(sce)
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment colData colData<-
 #' @importFrom SingleCellExperiment counts<-
@@ -288,6 +290,7 @@ runBcds <- function(
 #' data(scExample, package = "singleCellTK")
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runCxdsBcdsHybrid(sce)
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment colData colData<-
 #' @importFrom SingleCellExperiment counts counts<-

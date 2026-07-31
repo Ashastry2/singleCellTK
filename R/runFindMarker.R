@@ -53,6 +53,7 @@
 #' regulated DEGs for each cluster.
 #' @seealso \code{\link{runDEAnalysis}}, \code{\link{getFindMarkerTopTable}},
 #' \code{\link{plotFindMarkerHeatmap}}
+#' @family run functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE", package = "singleCellTK")
@@ -236,6 +237,7 @@ findMarkerDiffExp <- function(inSCE, useAssay = 'logcounts',
 #' @return An organized \code{data.frame} object, with the top marker gene
 #' information.
 #' @seealso \code{\link{runFindMarker}}, \code{\link{plotFindMarkerHeatmap}}
+#' @family accessor functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE", package = "singleCellTK")

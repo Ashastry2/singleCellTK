@@ -377,6 +377,7 @@
 #'   reducedDimName = "TSNE_counts", bin = c(-Inf, 20, 25, +Inf),
 #'   xlab = "tSNE1", ylab = "tSNE2", labelClusters = FALSE
 #' )
+#' @family plot functions
 #' @export
 plotSCEDimReduceColData <- function(inSCE,
                                     colorBy,
@@ -512,6 +513,7 @@ plotSCEDimReduceColData <- function(inSCE,
 #'   shape = NULL, reducedDimName = "TSNE_counts",
 #'   useAssay = "counts", xlab = "tSNE1", ylab = "tSNE2"
 #' )
+#' @family plot functions
 #' @export
 plotSCEDimReduceFeatures <- function(inSCE,
                                      feature,
@@ -667,6 +669,7 @@ plotSCEDimReduceFeatures <- function(inSCE,
 #'   slot = "assays", annotation = "counts", feature = "Apoe",
 #'   reducedDimName = "TSNE_counts", labelClusters = FALSE
 #' )
+#' @family plot functions
 #' @export
 #' @import SingleCellExperiment
 plotSCEScatter <- function(inSCE,
@@ -1065,6 +1068,7 @@ plotSCEScatter <- function(inSCE,
 #'   inSCE = mouseBrainSubsetSCE,
 #'   coldata = "age", groupBy = "sex"
 #' )
+#' @family plot functions
 #' @export
 plotSCEViolinColData <- function(inSCE,
                                  coldata,
@@ -1265,6 +1269,7 @@ plotSCEViolinColData <- function(inSCE,
 #'   inSCE = mouseBrainSubsetSCE,
 #'   feature = "Apoe", groupBy = "sex"
 #' )
+#' @family plot functions
 #' @export
 plotSCEViolinAssayData <- function(inSCE,
                                    feature,
@@ -1485,6 +1490,7 @@ plotSCEViolinAssayData <- function(inSCE,
 #'   inSCE = mouseBrainSubsetSCE, slotName = "assays",
 #'   itemName = "counts", feature = "Apoe", groupBy = "sex"
 #' )
+#' @family plot functions
 #' @export
 plotSCEViolin <- function(inSCE,
                           slotName,
@@ -1768,6 +1774,7 @@ plotSCEViolin <- function(inSCE,
 #'   inSCE = mouseBrainSubsetSCE,
 #'   coldata = "age", groupBy = "sex"
 #' )
+#' @family plot functions
 #' @export
 plotSCEDensityColData <- function(inSCE,
                                   coldata,
@@ -1906,6 +1913,7 @@ plotSCEDensityColData <- function(inSCE,
 #'   inSCE = mouseBrainSubsetSCE,
 #'   feature = "Apoe"
 #' )
+#' @family plot functions
 #' @export
 plotSCEDensityAssayData <- function(inSCE,
                                     feature,
@@ -2064,6 +2072,7 @@ plotSCEDensityAssayData <- function(inSCE,
 #'   inSCE = mouseBrainSubsetSCE, slotName = "assays",
 #'   itemName = "counts", feature = "Apoe", groupBy = "sex"
 #' )
+#' @family plot functions
 #' @export
 plotSCEDensity <- function(inSCE,
                            slotName,
@@ -2240,6 +2249,7 @@ plotSCEDensity <- function(inSCE,
 #' data(scExample, package = "singleCellTK")
 #' sce <- runEmptyDrops(inSCE = sce)
 #' plotEmptyDropsScatter(inSCE = sce)
+#' @family plot functions
 #' @export
 plotEmptyDropsScatter <- function(inSCE,
                                   sample = NULL,
@@ -2387,6 +2397,7 @@ plotEmptyDropsScatter <- function(inSCE,
 #' data(scExample, package = "singleCellTK")
 #' sce <- runBarcodeRankDrops(inSCE = sce)
 #' plotBarcodeRankScatter(inSCE = sce)
+#' @family plot functions
 #' @export
 plotBarcodeRankScatter <- function(inSCE,
                                    sample = NULL,
@@ -2644,6 +2655,7 @@ plotBarcodeRankScatter <- function(inSCE,
 #'   inSCE = mouseBrainSubsetSCE,
 #'   coldata = "age", groupBy = "sex"
 #' )
+#' @family plot functions
 #' @export
 plotSCEBarColData <- function(inSCE,
                               coldata,
@@ -2753,6 +2765,7 @@ plotSCEBarColData <- function(inSCE,
 #'   inSCE = mouseBrainSubsetSCE,
 #'   feature = "Apoe", groupBy = "sex"
 #' )
+#' @family plot functions
 #' @export
 plotSCEBarAssayData <- function(inSCE,
                                 feature,
@@ -2853,6 +2866,7 @@ plotSCEBarAssayData <- function(inSCE,
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- setSCTKDisplayRow(inSCE = sce, featureDisplayRow = "feature_name")
 #' plotSCEViolinAssayData(inSCE = sce, feature = "ENSG00000019582")
+#' @family accessor functions
 #' @export
 setSCTKDisplayRow <- function(inSCE,
                               featureDisplayRow) {

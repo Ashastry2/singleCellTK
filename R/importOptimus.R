@@ -278,6 +278,7 @@
 #' sce <- importOptimus(OptimusDirs = file.path,
 #'   samples = "Optimus_20x1000")
 #' }
+#' @family import functions
 #' @export
 importOptimus <- function(OptimusDirs,
   samples,

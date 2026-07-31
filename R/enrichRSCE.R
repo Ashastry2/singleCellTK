@@ -30,6 +30,7 @@
 #' equals to \code{nrow(inSCE)}. See details. Default \code{"rownames"}.
 #' @return Updates \code{inSCE} metadata with a data.frame of enrichment terms 
 #' overlapping in the respective databases along with p-values, z-scores etc.
+#' @family run functions
 #' @export
 #' @seealso \code{\link{getEnrichRResult}}
 #' @examples

@@ -38,6 +38,7 @@
 #' ix <- featureIndex(features = c("MT-CYB", "MT-ND2"),
 #'                              inSCE = sce,
 #'                              by = "feature_name")
+#' @family SCE manipulation
 #' @export
 featureIndex <- function(features, inSCE,
                                  by = "rownames",

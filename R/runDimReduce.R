@@ -34,6 +34,7 @@
 #' to the one you use.
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{reducedDim} updated with the result.
+#' @family run functions
 #' @export
 #' @examples
 #' data(scExample, package = "singleCellTK")

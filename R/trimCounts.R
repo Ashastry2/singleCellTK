@@ -8,6 +8,7 @@
 #' @param trimValue where trimValue[1] for upper threshold and trimValue[2] as
 #' lower threshold. Default is \code{c(10,-10)}
 #' @return trimmed counts matrix
+#' @family SCE manipulation
 #' @export
 #' @examples
 #' data(sce_chcl, package = "scds")

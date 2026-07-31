@@ -13,6 +13,7 @@
 #'
 #' @return A PCA plot
 #'
+#' @family plot functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")

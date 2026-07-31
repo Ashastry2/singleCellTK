@@ -76,6 +76,7 @@
 #' \code{getSoupX(inSCE)}. Replace "soupX" to "soupX_bg" when \code{background}
 #' is used.
 #' @seealso plotSoupXResults
+#' @family run functions
 #' @export
 #' @author Yichen Wang
 #' @examples
@@ -646,6 +647,7 @@ setReplaceMethod("getSoupX",
 #' @param legendTitleSize Numeric. Size of legend title. Default \code{NULL}.
 #' @return ggplot object of the combination of UMAPs. See description.
 #' @seealso runSoupX
+#' @family plot functions
 #' @export
 #' @examples
 #' \dontrun{

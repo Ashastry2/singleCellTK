@@ -19,6 +19,7 @@
 #' reducedDim. Default \code{50L}.
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{reducedDim(inSCE, reducedDimName)} updated.
+#' @family run functions
 #' @export
 #' @references Krzysztof Polanski et al., 2020
 #' @examples
@@ -120,6 +121,7 @@ runBBKNN <-function(inSCE, useAssay = 'logcounts', batch = 'batch',
 #' #sceBatches <- runComBatSeq(sceBatches, "counts", "batch",
 #' #                           useSVA = TRUE,
 #' #                           assayName = "ComBat_sva_seq")
+#' @family run functions
 #' @export
 runComBatSeq <- function(inSCE, useAssay = "counts", batch = 'batch',
                          covariates = NULL, bioCond = NULL, useSVA = FALSE,
@@ -230,6 +232,7 @@ runComBatSeq <- function(inSCE, useAssay = "counts", batch = 'batch',
 #' \code{reducedDim(inSCE, reducedDimName)} updated.
 #' @seealso \code{\link[batchelor]{fastMNN}} for using \code{useAssay}, and
 #' \code{\link[batchelor]{reducedMNN}} for using \code{useReducedDim}
+#' @family run functions
 #' @export
 #' @references Lun ATL, et al., 2016
 #' @examples
@@ -311,6 +314,7 @@ runFastMNN <- function(inSCE, useAssay = "logcounts", useReducedDim = NULL,
 #' \code{plot_convergence}, \code{reference_values} and \code{cluster_prior}.
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{reducedDim(inSCE, reducedDimName)} updated.
+#' @family run functions
 #' @export
 #' @references Ilya Korsunsky, et al., 2019
 #' @examples
@@ -465,6 +469,7 @@ runHarmony <- function(inSCE, useAssay = NULL, useReducedDim = NULL,
 #' \code{"LIMMA"}.
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{assay(inSCE, assayName)} updated.
+#' @family run functions
 #' @export
 #' @references Gordon K Smyth, et al., 2003
 #' @examples
@@ -528,6 +533,7 @@ runLimmaBC <- function(inSCE, useAssay = "logcounts", assayName = "LIMMA",
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{assay(inSCE, assayName)} updated.
 #' @seealso \code{\link[batchelor]{mnnCorrect}}
+#' @family run functions
 #' @export
 #' @references Haghverdi L, Lun ATL, et. al., 2018
 #' @examples
@@ -587,6 +593,7 @@ runMNNCorrect <- function(inSCE, useAssay = 'logcounts', batch = 'batch',
 #' matching runtime. Default \code{TRUE}.
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{assay(inSCE, assayName)} updated.
+#' @family run functions
 #' @export
 #' @references Brian Hie et al, 2019
 #' @examples
@@ -686,6 +693,7 @@ integrated = integrated[:, orderIdx]
 #' should be parallelized. Default \code{BiocParallel::SerialParam()}.
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{assay(inSCE, assayName)} updated.
+#' @family run functions
 #' @export
 #' @references Hoa, et al., 2020
 #' @examples
@@ -777,6 +785,7 @@ runSCMerge <- function(inSCE, useAssay = "logcounts", batch = 'batch',
 #' should be parallelized. Default \code{BiocParallel::SerialParam()}.
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{reducedDim(inSCE, reducedDimName)} updated.
+#' @family run functions
 #' @export
 #' @references Pollen, Alex A et al., 2014
 #' @examples

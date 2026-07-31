@@ -5,6 +5,7 @@
 #'  \link{DelayedArray} object or not. Default \code{FALSE}.
 #' @return A list of \link[SingleCellExperiment]{SingleCellExperiment} object containing
 #' the droplet or cell data or both,depending on the dataType that users provided.
+#' @family import functions
 #' @export
 importMultipleSources <- function(allImportEntries, delayedArray = FALSE) {
   sceObjs <- list()

@@ -120,6 +120,7 @@
 #' # https://github.com/hms-dbmi/dropEst/blob/master/examples/EXAMPLES.md
 #' sce <- importDropEst(sampleDirs = system.file("extdata/dropEst_scg71", package = "singleCellTK"),
 #'                      sampleNames = 'scg71')
+#' @family import functions
 #' @export
 importDropEst <- function(sampleDirs = NULL,
                           dataType = c('filtered','raw'),

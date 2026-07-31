@@ -24,6 +24,7 @@
 #' \dontrun{
 #' exportSCEtoAnnData(sce=sce_chcl, compression="gzip")
 #' }
+#' @family export functions
 #' @export
 exportSCEtoAnnData <- function(sce,
                                 useAssay = 'counts',

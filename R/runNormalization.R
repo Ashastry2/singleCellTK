@@ -37,6 +37,7 @@
 #' displayed to the user. Default is \code{TRUE}.
 #'
 #' @return Output SCE object with new normalized/transformed assay stored.
+#' @family run functions
 #' @export
 #'
 #' @examples

@@ -1,0 +1,72 @@
+citHeader("To cite singleCellTK in publications, please use the paper matching how you used the toolkit:")
+
+bibentry(
+  bibtype = "Article",
+  title   = "Comprehensive generation, visualization, and reporting of quality control metrics for single-cell RNA sequencing data",
+  author  = c(
+    person("Rui", "Hong"),
+    person("Yusuke", "Koga"),
+    person("Shruthi", "Bandyadka"),
+    person("Anastasia", "Leshchyk"),
+    person("Yichen", "Wang"),
+    person("Vidya", "Akavoor"),
+    person("Xinyun", "Cao"),
+    person("Irzam", "Sarfraz"),
+    person("Zhe", "Wang"),
+    person("Salam", "Alabdullatif"),
+    person("Frederick", "Jansen"),
+    person("Masanao", "Yajima"),
+    person(c("W.", "Evan"), "Johnson"),
+    person(c("Joshua", "D."), "Campbell")
+  ),
+  journal = "Nature Communications",
+  year    = 2022,
+  volume  = 13,
+  number  = 1,
+  pages   = 1688,
+  doi     = "10.1038/s41467-022-29212-9",
+  textVersion = paste(
+    "Rui Hong, Yusuke Koga, Shruthi Bandyadka, Anastasia Leshchyk, Yichen Wang,",
+    "Vidya Akavoor, Xinyun Cao, Irzam Sarfraz, Zhe Wang, Salam Alabdullatif,",
+    "Frederick Jansen, Masanao Yajima, W. Evan Johnson, Joshua D. Campbell (2022).",
+    "Comprehensive generation, visualization, and reporting of quality control metrics",
+    "for single-cell RNA sequencing data. Nature Communications, 13(1), 1688.",
+    "doi:10.1038/s41467-022-29212-9"
+  ),
+  header = "If you used SCTK for quality control:"
+)
+
+bibentry(
+  bibtype = "Article",
+  title   = "Interactive analysis of single-cell data using flexible workflows with SCTK2",
+  author  = c(
+    person("Yichen", "Wang"),
+    person("Irzam", "Sarfraz"),
+    person("Nida", "Pervaiz"),
+    person("Rui", "Hong"),
+    person("Yusuke", "Koga"),
+    person("Vidya", "Akavoor"),
+    person("Xinyun", "Cao"),
+    person("Salam", "Alabdullatif"),
+    person(c("Syed", "Ali"), "Zaib"),
+    person("Zhe", "Wang"),
+    person("Frederick", "Jansen"),
+    person("Masanao", "Yajima"),
+    person(c("W.", "Evan"), "Johnson"),
+    person(c("Joshua", "D."), "Campbell")
+  ),
+  journal = "Patterns",
+  year    = 2023,
+  volume  = 4,
+  number  = 8,
+  pages   = 100814,
+  doi     = "10.1016/j.patter.2023.100814",
+  textVersion = paste(
+    "Yichen Wang, Irzam Sarfraz, Nida Pervaiz, Rui Hong, Yusuke Koga, Vidya Akavoor,",
+    "Xinyun Cao, Salam Alabdullatif, Syed Ali Zaib, Zhe Wang, Frederick Jansen,",
+    "Masanao Yajima, W. Evan Johnson, Joshua D. Campbell (2023).",
+    "Interactive analysis of single-cell data using flexible workflows with SCTK2.",
+    "Patterns, 4(8), 100814. doi:10.1016/j.patter.2023.100814"
+  ),
+  header = "If you used SCTK for analysis in the R console or the interactive GUI:"
+)

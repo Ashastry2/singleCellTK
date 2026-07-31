@@ -170,6 +170,7 @@
 #'   STARsoloDirs = system.file("extdata/STARsolo_PBMC_1k_v3_20x20",
 #'     package = "singleCellTK"),
 #'   samples = "PBMC_1k_v3_20x20")
+#' @family import functions
 #' @export
 importSTARsolo <- function(
     STARsoloDirs,

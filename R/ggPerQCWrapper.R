@@ -59,6 +59,7 @@
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runPerCellQC(sce)
 #' plotRunPerCellQCResults(inSCE = sce)
+#' @family plot functions
 #' @export
 plotRunPerCellQCResults <- function(inSCE,
                                     sample = NULL,
@@ -432,6 +433,7 @@ plotRunPerCellQCResults <- function(inSCE,
 #' data(scExample, package = "singleCellTK")
 #' sce <- runEmptyDrops(inSCE = sce)
 #' plotEmptyDropsResults(inSCE = sce)
+#' @family plot functions
 #' @export
 plotEmptyDropsResults <- function(inSCE,
                                   sample = NULL,
@@ -498,6 +500,7 @@ plotEmptyDropsResults <- function(inSCE,
 #' data(scExample, package = "singleCellTK")
 #' sce <- runBarcodeRankDrops(inSCE = sce)
 #' plotBarcodeRankDropsResults(inSCE = sce)
+#' @family plot functions
 #' @export
 plotBarcodeRankDropsResults <- function(inSCE,
                                         sample = NULL,
@@ -606,6 +609,7 @@ plotBarcodeRankDropsResults <- function(inSCE,
 #' sce <- runScrublet(sce)
 #' plotScrubletResults(inSCE=sce, reducedDimName="UMAP")
 #' }
+#' @family plot functions
 #' @export
 plotScrubletResults <- function(
     inSCE,
@@ -923,6 +927,7 @@ plotScrubletResults <- function(
 #' sce <- runQuickUMAP(sce)
 #' sce <- runDoubletFinder(sce)
 #' plotDoubletFinderResults(inSCE = sce, reducedDimName = "UMAP")
+#' @family plot functions
 #' @export
 plotDoubletFinderResults <- function(
     inSCE,
@@ -1308,6 +1313,7 @@ plotDoubletFinderResults <- function(
 #' sce <- runQuickUMAP(sce)
 #' sce <- runScDblFinder(sce)
 #' plotScDblFinderResults(inSCE = sce, reducedDimName = "UMAP")
+#' @family plot functions
 #' @export
 plotScDblFinderResults <- function(
     inSCE,
@@ -1621,6 +1627,7 @@ plotScDblFinderResults <- function(
 #' sce <- runQuickUMAP(sce)
 #' sce <- runCxds(sce)
 #' plotCxdsResults(inSCE=sce, reducedDimName="UMAP")
+#' @family plot functions
 #' @export
 #' @importFrom SingleCellExperiment reducedDimNames
 plotCxdsResults <- function(
@@ -1943,6 +1950,7 @@ plotCxdsResults <- function(
 #' sce <- runQuickUMAP(sce)
 #' sce <- runBcds(sce)
 #' plotBcdsResults(inSCE=sce, reducedDimName="UMAP")
+#' @family plot functions
 #' @export
 plotBcdsResults <- function(
     inSCE,
@@ -2252,6 +2260,7 @@ plotBcdsResults <- function(
 #' sce <- runQuickUMAP(sce)
 #' sce <- runCxdsBcdsHybrid(sce)
 #' plotScdsHybridResults(inSCE=sce, reducedDimName="UMAP")
+#' @family plot functions
 #' @export
 plotScdsHybridResults <- function(inSCE,
                                   sample=NULL,
@@ -2558,6 +2567,7 @@ plotScdsHybridResults <- function(inSCE,
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runDecontX(sce)
 #' plotDecontXResults(inSCE=sce, reducedDimName="decontX_UMAP")
+#' @family plot functions
 #' @export
 plotDecontXResults <- function(inSCE,
                                sample=NULL,

@@ -53,6 +53,7 @@
 #' sce <- runScanpyNormalizeData(sce, useAssay = "counts")
 #' }
 #' @return Normalized \code{SingleCellExperiment} object
+#' @family run functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 runScanpyNormalizeData <- function(inSCE,
@@ -131,6 +132,7 @@ runScanpyNormalizeData <- function(inSCE,
 #' sce <- runScanpyScaleData(sce, useAssay = "scanpyNormData")
 #' }
 #' @return Scaled \code{SingleCellExperiment} object
+#' @family run functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 runScanpyScaleData <- function(inSCE,
@@ -217,6 +219,7 @@ runScanpyScaleData <- function(inSCE,
 #' @return Updated \code{SingleCellExperiment} object with highly variable genes
 #' computation stored
 #' \code{\link{getTopHVG}}, \code{\link{plotTopHVG}}
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment rowData rowData<-
 #' @importFrom S4Vectors metadata<-
@@ -423,6 +426,7 @@ runScanpyFindHVG <- function(inSCE,
 #' plotScanpyHVG(sce)
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyHVG <- function(inSCE,
@@ -491,6 +495,7 @@ plotScanpyHVG <- function(inSCE,
 #' }
 #' @return Updated \code{SingleCellExperiment} object which now contains the
 #' computed principal components
+#' @family run functions
 #' @export
 #' @importFrom SingleCellExperiment reducedDim<- rowSubset
 #' @importFrom S4Vectors metadata<-
@@ -578,6 +583,7 @@ runScanpyPCA <- function(inSCE,
 #' plotScanpyPCA(sce)
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyPCA <- function(inSCE,
@@ -640,6 +646,7 @@ plotScanpyPCA <- function(inSCE,
 #' plotScanpyPCAGeneRanking(sce)
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyPCAGeneRanking <- function(inSCE, 
@@ -681,6 +688,7 @@ plotScanpyPCAGeneRanking <- function(inSCE,
 #' plotScanpyPCAVariance(sce)
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyPCAVariance <- function(inSCE,
@@ -755,6 +763,7 @@ plotScanpyPCAVariance <- function(inSCE,
 #' sce <- runScanpyFindClusters(sce, useReducedDim = "scanpyPCA")
 #' }
 #' @return Updated sce object which now contains the computed clusters
+#' @family run functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 runScanpyFindClusters <- function(inSCE,
@@ -903,6 +912,7 @@ runScanpyFindClusters <- function(inSCE,
 #' sce <- runScanpyUMAP(sce, useReducedDim = "scanpyPCA")
 #' }
 #' @return Updated sce object with UMAP computations stored
+#' @family run functions
 #' @export
 #' @importFrom SingleCellExperiment reducedDim<-
 #' @importFrom reticulate py_module_available py_set_seed import
@@ -1023,6 +1033,7 @@ runScanpyUMAP <- function(inSCE,
 #' sce <- runScanpyTSNE(sce, useReducedDim = "scanpyPCA")
 #' }
 #' @return Updated sce object with tSNE computations stored
+#' @family run functions
 #' @export
 #' @importFrom SingleCellExperiment reducedDim<-
 #' @importFrom reticulate py_module_available py_set_seed import
@@ -1126,6 +1137,7 @@ runScanpyTSNE <- function(inSCE,
 #' plotScanpyEmbedding(sce, reducedDimName = "scanpyUMAP", color = 'Scanpy_louvain_1')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyEmbedding <- function(inSCE,
@@ -1212,6 +1224,7 @@ plotScanpyEmbedding <- function(inSCE,
 #' }
 #' @return A \code{SingleCellExperiment} object that contains marker genes
 #' populated in a data.frame stored inside metadata slot.
+#' @family run functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 runScanpyFindMarkers <- function(inSCE,
@@ -1310,6 +1323,7 @@ runScanpyFindMarkers <- function(inSCE,
 #' plotScanpyMarkerGenes(sce, groups = '0')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyMarkerGenes <- function(inSCE,
@@ -1363,6 +1377,7 @@ plotScanpyMarkerGenes <- function(inSCE,
 #' plotScanpyMarkerGenesViolin(sce, groups = '0')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyMarkerGenesViolin <- function(inSCE,
@@ -1418,6 +1433,7 @@ plotScanpyMarkerGenesViolin <- function(inSCE,
 #' plotScanpyMarkerGenesHeatmap(sce, groupBy = 'Scanpy_louvain_1')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyMarkerGenesHeatmap <- function(inSCE,
@@ -1507,6 +1523,7 @@ plotScanpyMarkerGenesHeatmap <- function(inSCE,
 #' plotScanpyMarkerGenesDotPlot(sce, groupBy = 'Scanpy_louvain_1')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyMarkerGenesDotPlot <- function(inSCE,
@@ -1616,6 +1633,7 @@ plotScanpyMarkerGenesDotPlot <- function(inSCE,
 #' plotScanpyMarkerGenesMatrixPlot(sce, groupBy = 'Scanpy_louvain_1')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyMarkerGenesMatrixPlot <- function(inSCE,
@@ -1720,6 +1738,7 @@ plotScanpyMarkerGenesMatrixPlot <- function(inSCE,
 #' plotScanpyHeatmap(sce, features = markers, groupBy = 'Scanpy_louvain_1')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyHeatmap <- function(inSCE,
@@ -1797,6 +1816,7 @@ plotScanpyHeatmap <- function(inSCE,
 #' plotScanpyDotPlot(sce, features = markers, groupBy = 'Scanpy_louvain_1')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyDotPlot <- function(inSCE,
@@ -1878,6 +1898,7 @@ plotScanpyDotPlot <- function(inSCE,
 #' plotScanpyMatrixPlot(sce, features = markers, groupBy = 'Scanpy_louvain_1')
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyMatrixPlot <- function(inSCE,
@@ -1945,6 +1966,7 @@ plotScanpyMatrixPlot <- function(inSCE,
 #' plotScanpyViolin(sce, features = markers, groupBy = "Scanpy_louvain_1")
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 plotScanpyViolin <- function(inSCE,

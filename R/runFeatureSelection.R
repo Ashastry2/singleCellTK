@@ -19,6 +19,7 @@
 #' the computed statistics in the \code{rowData} slot
 #' @seealso \code{\link{runModelGeneVar}}, \code{\link{runSeuratFindHVG}},
 #' \code{\link{getTopHVG}}, \code{\link{plotTopHVG}}
+#' @family run functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE", package = "singleCellTK")

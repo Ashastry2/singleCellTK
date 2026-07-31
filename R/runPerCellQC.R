@@ -97,6 +97,7 @@
 #' mito.ix = grep("^MT-", rowData(sce)$feature_name)
 #' geneSet <- list("Mito"=rownames(sce)[mito.ix])
 #' sce <- runPerCellQC(sce, geneSetList = geneSet)
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment rowData colData
 #' @importFrom S4Vectors metadata metadata<-

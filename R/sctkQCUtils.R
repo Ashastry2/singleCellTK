@@ -15,6 +15,7 @@
 #' @param copyReducedDim Boolean. Whether copy 'reducedDims' of the SCE object to the 'reductions' of Seurat object. Default \code{TRUE}.
 #' @param copyDecontX Boolean. Whether copy 'decontXcounts' assay of the SCE object to the 'assays' of Seurat object. Default \code{TRUE}.
 #' @return Generates a Seurat object containing data from \code{inSCE}.
+#' @family export functions
 #' @export
 
 exportSCEToSeurat <- function(inSCE, prefix="sample", outputDir="./", overwrite=TRUE,
@@ -59,6 +60,7 @@ exportSCEToSeurat <- function(inSCE, prefix="sample", outputDir="./", overwrite=
 #' \dontrun{
 #' exportSCE(sce, format = "SCE")
 #' }
+#' @family export functions
 #' @export
 exportSCE <- function(inSCE,
                       samplename = "sample",
@@ -132,6 +134,7 @@ exportSCE <- function(inSCE,
 #' HTAN parent file ID and HTAN patient ID). Default is TRUE. 
 #' @return A \link[SingleCellExperiment]{SingleCellExperiment} object which combines all
 #' objects in sceList. The colData is merged.
+#' @family QC pipeline
 #' @export
 
 generateMeta <- function(dropletSCE = NULL,
@@ -318,6 +321,7 @@ generateMeta <- function(dropletSCE = NULL,
 #' @param dataType Type of the input data. It can be one of "Droplet", "Cell" or "Both".
 #' @return A \link[SingleCellExperiment]{SingleCellExperiment} object which combines all
 #' objects in sceList. The colData is merged.
+#' @family QC pipeline
 #' @export
 #' @importFrom rlang .data
 
@@ -587,6 +591,7 @@ generateHTANMeta <- function(dropletSCE = NULL,
 #' @param writeYAML Whether output yaml file to store parameters. Default if TRUE. If FALSE,
 #' return character object.
 #' @return If \code{writeYAML} TRUE, a yaml object will be generated. If FALSE, character object.
+#' @family accessor functions
 #' @export
 getSceParams <- function(inSCE,
                          skip = c("runScrublet","runDecontX","runBarcodeRanksMetaOutput","genesets","runSoupX"),
@@ -633,6 +638,7 @@ getSceParams <- function(inSCE,
 #' @param samplename The sample name of the data.
 #' @return A \link[SingleCellExperiment]{SingleCellExperiment} object containing
 #' the count matrix.
+#' @family QC pipeline
 #' @export
 constructSCE <- function(data, samplename) {
     gene <- data[[1]]
@@ -666,6 +672,7 @@ constructSCE <- function(data, samplename) {
 #' @param dataType Type of the input. It can be "Both", "Droplet" or "Cell". It's one of the path provided in --genome argument.
 #' @return A list of \link[SingleCellExperiment]{SingleCellExperiment} object containing
 #' the droplet or cell data or both,depending on the dataType that users provided.
+#' @family QC pipeline
 #' @export
 qcInputProcess <- function(preproc,
     samplename,

@@ -56,6 +56,7 @@
 #' @param rowNamesDedup Boolean. Whether to deduplicate rownames. Default 
 #'  \code{TRUE}.
 #' @return a \linkS4class{SingleCellExperiment} object
+#' @family import functions
 #' @export
 
 importFromFiles <- function(assayFile, annotFile = NULL, featureFile = NULL,

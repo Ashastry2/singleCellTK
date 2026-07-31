@@ -11,6 +11,7 @@
 #' @param shape add shape to each distinct label.
 #'
 #' @return A t-SNE plot
+#' @family plot functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")

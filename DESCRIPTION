@@ -145,5 +145,5 @@ Suggests:
     optparse
 VignetteBuilder: knitr
 URL: https://www.camplab.net/sctk/
-BugReports: https://github.com/compbiomed/singleCellTK/issues
+BugReports: https://github.com/Ashastry2/singleCellTK/issues
 Language: en-US

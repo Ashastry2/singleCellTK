@@ -54,6 +54,7 @@
 #' @param check_sanity Logical scalar. Whether to perform MAST's sanity check
 #' to see if the counts are logged. Default \code{TRUE}
 #' @return A ggplot object of violin plot
+#' @family plot functions
 #' @export
 #' @examples
 #' data("sceBatches")
@@ -165,6 +166,7 @@ plotDEGViolin <- function(inSCE, useResult, threshP = FALSE, labelBy = NULL,
 #' @param check_sanity Logical scalar. Whether to perform MAST's sanity check
 #' to see if the counts are logged. Default \code{TRUE}
 #' @return A ggplot object of linear regression
+#' @family plot functions
 #' @export
 #' @examples
 #' data("sceBatches")
@@ -306,6 +308,7 @@ plotDEGRegression <- function(inSCE, useResult, threshP = FALSE, labelBy = NULL,
 #' fraction of cells in group2. Default \code{NULL}.
 #' @return A \code{data.frame} object of the top DEGs, with variables of
 #' \code{Gene}, \code{Log2_FC}, \code{Pvalue}, and \code{FDR}.
+#' @family accessor functions
 #' @export
 #' @examples
 #' data("sceBatches")
@@ -413,6 +416,7 @@ getDEGTopTable <- function(inSCE, useResult,
 #'                    analysisName = "w.aVSb")
 #' plotDEGHeatmap(sce.w, "w.aVSb")
 #' @return A \code{\link[ggplot2]{ggplot}} object
+#' @family plot functions
 #' @export
 #' @author Yichen Wang
 plotDEGHeatmap <- function(inSCE, useResult, onlyPos = FALSE,
@@ -582,6 +586,7 @@ plotDEGHeatmap <- function(inSCE, useResult, onlyPos = FALSE,
 #' \code{\link{setSCTKDisplayRow}})
 #' @return A \code{ggplot} object of volcano plot
 #' @seealso \code{\link{runDEAnalysis}}, \code{\link{plotDEGHeatmap}}
+#' @family plot functions
 #' @export
 #' @examples
 #' data("sceBatches")
@@ -695,6 +700,7 @@ plotDEGVolcano <- function(
 #' to see if the counts are logged. Default \code{TRUE}
 #' @return Plot the thresholding onto the plotting region if \code{plot == TRUE}
 #' or a graphical object if \code{plot == FALSE}.
+#' @family plot functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")

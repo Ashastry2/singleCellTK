@@ -28,6 +28,7 @@
 #' sce <- runDecontX(sce[,sample(ncol(sce),20)])
 #' sce <- detectCellOutlier(sce, slotName = "colData", sample = sce$sample,
 #'  nmads = 4, itemName = "decontX_contamination", type = "both")
+#' @family run functions
 #' @export
 detectCellOutlier <- function(inSCE, slotName, itemName, sample = NULL, nmads = 3,
                               type = "both", overwrite = TRUE){

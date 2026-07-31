@@ -166,6 +166,7 @@ setMethod("listSampleSummaryStatsTables", "SingleCellExperiment", function(inSCE
 #' sce <- sampleSummaryStats(sce, simple = TRUE)
 #' getSampleSummaryStatsTable(sce, statsName = "qc_table")
 #' @importFrom magrittr %>%
+#' @family SCE manipulation
 #' @export
 sampleSummaryStats <- function(inSCE,
                                sample = NULL,

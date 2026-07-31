@@ -20,6 +20,7 @@
 #' result, named by \code{analysisName}. The \code{data.frame} contains columns
 #' for number and fraction of cells that belong to different cases, as well as
 #' "Odds_Ratio", "PValue" and "FDR".
+#' @family run functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE", package = "singleCellTK")
@@ -172,6 +173,7 @@ setReplaceMethod("getDiffAbundanceResults",
 #' @return When \code{combinePlot = "none"}, a \code{list} with 4 
 #' \code{\link[ggplot2]{ggplot}} objects; when \code{combinePlot = "all"}, a 
 #' single \code{\link[ggplot2]{ggplot}} object with for subplots. 
+#' @family plot functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE", package = "singleCellTK")

@@ -13,6 +13,7 @@
 #' @param yAxisLabel Specify the label for y-axis. Default is \code{NULL} which
 #' will specify the label as 'y'.
 #' @return plot object
+#' @family plot functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE", package = "singleCellTK")

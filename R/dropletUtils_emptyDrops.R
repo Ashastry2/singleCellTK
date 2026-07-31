@@ -64,6 +64,7 @@
 #' data(scExample, package = "singleCellTK")
 #' sce <- runEmptyDrops(inSCE = sce)
 #' @import DropletUtils
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment colData colData<-
 runEmptyDrops <- function(inSCE,

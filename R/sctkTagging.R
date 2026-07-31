@@ -5,6 +5,7 @@
 #' @param inSCE Input \code{SingleCellExperiment} object.
 #' @param assay Name of the assay or the data item against which a tag should be removed.
 #' @return The input \code{SingleCellExperiment} object with tag information removed from the metadata slot.
+#' @family assay tagging
 #' @export
 #' @examples 
 #' data(scExample, package = "singleCellTK")
@@ -25,6 +26,7 @@ expDeleteDataTag <- function(inSCE, assay){
 #' @param assayType Specify a \code{character(1)} value as a tag that should be set against a data item.
 #' @param assays Specify name(s) \code{character()} of data item(s) against which the tag should be set.
 #' @return The input \code{SingleCellExperiment} object with tag information stored in the metadata slot.
+#' @family assay tagging
 #' @export
 #' @examples 
 #' data(scExample, package = "singleCellTK")
@@ -61,6 +63,7 @@ expSetDataTag <- function(inSCE, assayType, assays){
 #' @importFrom stats filter
 #' @importFrom tibble tibble
 #' @importFrom rlang .data
+#' @family assay tagging
 #' @export
 #' @examples 
 #' data(scExample, package = "singleCellTK")

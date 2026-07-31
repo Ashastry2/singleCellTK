@@ -100,6 +100,7 @@
 #' data(scExample, package = "singleCellTK")
 #' plotSCEHeatmap(sce[1:3,1:3], useAssay = "counts")
 #' @return A \code{\link[ggplot2]{ggplot}} object.
+#' @family plot functions
 #' @export
 #' @author Yichen Wang
 #' @importFrom scuttle aggregateAcrossCells aggregateAcrossFeatures

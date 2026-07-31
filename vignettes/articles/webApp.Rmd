@@ -13,6 +13,10 @@ csl: ieee.csl
 knitr::opts_chunk$set(warning = FALSE)
 ```
 
+```{r setup, message=FALSE}
+library(singleCellTK)
+```
+
 ## Quick Links:
 - [Go to SCTK web-app](https://sctk.bu.edu/) 
 - [How to import and upload data?](import_data.html)

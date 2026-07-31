@@ -27,6 +27,7 @@
 #' the PCA should be parallelized.
 #' @return A \linkS4class{SingleCellExperiment} object with PCA computation
 #' updated in \code{reducedDim(inSCE, reducedDimName)}.
+#' @family run functions
 #' @export
 #' @examples
 #' data(scExample, package = "singleCellTK")

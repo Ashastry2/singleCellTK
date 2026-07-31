@@ -28,6 +28,7 @@
 #' on each cell. Default \code{NULL}.
 #' @return Input SCE object with cell type labeling updated in
 #' \code{colData(inSCE)}, together with scoring metrics.
+#' @family run functions
 #' @export
 #' @examples
 #' data("sceBatches")

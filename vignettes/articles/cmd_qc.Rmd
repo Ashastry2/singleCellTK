@@ -5,6 +5,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 require(Biobase)
+library(singleCellTK)
 
 knitr::opts_chunk$set(warning = FALSE)
 pkgVersion <- package.version("singleCellTK")

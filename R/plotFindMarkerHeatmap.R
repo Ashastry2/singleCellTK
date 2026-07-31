@@ -71,6 +71,7 @@
 #' @return A \code{\link[ComplexHeatmap]{Heatmap}} object
 #' @seealso \code{\link{runFindMarker}}, \code{\link{getFindMarkerTopTable}}
 #' @author Yichen Wang
+#' @family plot functions
 #' @export
 #' @examples
 #' data("sceBatches")
@@ -240,6 +241,7 @@ plotFindMarkerHeatmap <- function(inSCE, orderBy = 'size',
 }
 
 #' @rdname plotFindMarkerHeatmap
+#' @family plot functions
 #' @export
 plotMarkerDiffExp <- function(inSCE, orderBy = 'size',
                               log2fcThreshold = 1, fdrThreshold = 0.05,

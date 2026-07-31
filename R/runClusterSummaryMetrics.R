@@ -14,6 +14,7 @@
 #' data("scExample")
 #' runClusterSummaryMetrics(inSCE=sce, useAssay="counts", featureNames=c("B2M", "MALAT1"), 
 #' displayName="feature_name", groupNames="type")
+#' @family run functions
 #' @export
 
 runClusterSummaryMetrics <- function(inSCE, useAssay="logcounts", featureNames, displayName=NULL, groupNames="cluster", scale = FALSE){

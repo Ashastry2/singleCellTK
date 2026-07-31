@@ -72,6 +72,7 @@
 #' \code{altExpRedDim}, this function will subset the top \code{nComp}
 #' components and pass them to the method.
 #' @references Aaron Lun and et. al., 2016
+#' @family run functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -209,6 +210,7 @@ runScranSNN <- function(inSCE, useReducedDim = "PCA", useAssay = NULL,
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{factor} cluster labeling updated in
 #' \code{colData(inSCE)[[clusterName]]}.
+#' @family run functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")

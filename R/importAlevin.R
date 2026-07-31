@@ -20,6 +20,7 @@
 #'  matrix, the feature annotations, and the cell annotation
 #'  (which includes QC metrics stored in 'featureDump.txt').
 #' @import eds
+#' @family import functions
 #' @export
 
 importAlevin <- function(

@@ -337,7 +337,7 @@ The results are saved in the `metadata` slot of the returned SCE object
 ````  
 
 ```{}
-matadata(sce)
+metadata(sce)
           |- $info1
           |- $info2
           |- ...

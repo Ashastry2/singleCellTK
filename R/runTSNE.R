@@ -52,6 +52,7 @@
 #' Default \code{NULL} will use global seed in use by the R environment.
 #' @return A \linkS4class{SingleCellExperiment} object with tSNE computation
 #' updated in \code{reducedDim(inSCE, reducedDimName)}.
+#' @family run functions
 #' @export
 #' @examples
 #' data(scExample, package = "singleCellTK")

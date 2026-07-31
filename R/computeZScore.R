@@ -7,6 +7,7 @@
 #' Z-Score matrix.
 #' @param counts matrix (base matrix, dgCMatrix or DelayedMatrix)
 #' @return z-score computed counts matrix (DelayedMatrix)
+#' @family run functions
 #' @export
 #' @examples
 #' data(sce_chcl, package = "scds")

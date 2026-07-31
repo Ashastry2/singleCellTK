@@ -272,6 +272,7 @@
 #' @examples
 #' data(scExample, package = "singleCellTK")
 #' combinedsce <- combineSCE(list(sce,sce), by.r = NULL, by.c = NULL, combined = TRUE)
+#' @family SCE manipulation
 #' @export
 
 combineSCE <- function(sceList, by.r = NULL, by.c = NULL, combined = TRUE){

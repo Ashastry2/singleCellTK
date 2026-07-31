@@ -28,6 +28,7 @@
 #' the input object. This external reduction should be created
 #' using \code{CreateDimReducObject} function.
 #' @return Heatmap plot object.
+#' @family plot functions
 #' @export
 computeHeatmap <- function(inSCE,
                            useAssay,

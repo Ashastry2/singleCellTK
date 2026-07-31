@@ -46,6 +46,7 @@
 #' \dontrun{
 #' sce <- runCellQC(sce)
 #' }
+#' @family run functions
 #' @export
 
 runCellQC <- function(inSCE,
@@ -232,6 +233,7 @@ runCellQC <- function(inSCE,
 #' \dontrun{
 #' sce <- runDropletQC(sce)
 #' }
+#' @family run functions
 #' @export
 runDropletQC <- function(inSCE,
   algorithms = c("QCMetrics", "emptyDrops", "barcodeRanks"),

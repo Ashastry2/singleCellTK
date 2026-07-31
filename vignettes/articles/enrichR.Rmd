@@ -185,11 +185,11 @@ getEnrichRResult(sce, analysisName = "tutorial_analysis")$result
 library(enrichR)
 websiteLive <- getOption("enrichR.live")
 if (isTRUE(websiteLive)) {
-  listEnrichrSites()
-  setEnrichrSite("Enrichr") # Human genes   
+  enrichR::listEnrichrSites()
+  enrichR::setEnrichrSite("Enrichr") # Human genes   
 }
 # Make enrichR do its job, and connect to the database
-databases <- listEnrichrDbs()
+databases <- enrichR::listEnrichrDbs()
 # Load singleCellTK & pbmc3k example data
 library(singleCellTK)
 sce <- importExampleData(dataset = "pbmc3k")

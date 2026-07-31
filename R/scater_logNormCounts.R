@@ -4,6 +4,7 @@
 #' @param assayName New assay name for log normalized data
 #' @param useAssay Input assay 
 #' @return inSCE Updated SingleCellExperiment object that contains the new log normalized data
+#' @family run functions
 #' @export
 #' @author Irzam Sarfraz
 #' @examples

@@ -10,6 +10,7 @@
 #' @param useAssay A character string to specify an assay to compute variable 
 #' features from. Default \code{"logcounts"}.
 #' @return \code{inSCE} updated with variable feature metrics in \code{rowData}
+#' @family run functions
 #' @export
 #' @author Irzam Sarfraz
 #' @examples

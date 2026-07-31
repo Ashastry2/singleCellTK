@@ -85,6 +85,7 @@
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runScrublet(sce)
 #' }
+#' @family run functions
 #' @export
 #' @importFrom reticulate py_module_available py_set_seed import
 #' @importFrom SummarizedExperiment colData colData<- assayNames assayNames<-

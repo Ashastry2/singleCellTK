@@ -143,6 +143,7 @@
 #'   BUStoolsDirs = system.file("extdata/BUStools_PBMC_1k_v3_20x20/genecount/",
 #'     package = "singleCellTK"),
 #'   samples = "PBMC_1k_v3_20x20")
+#' @family import functions
 #' @export
 importBUStools <- function(
     BUStoolsDirs,

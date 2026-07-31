@@ -346,6 +346,7 @@
 #' options(future.globals.maxSize = 786432000)
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runDoubletFinder(sce)
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment colData colData<- assayNames assayNames<-
 #' @importFrom SingleCellExperiment reducedDim<-

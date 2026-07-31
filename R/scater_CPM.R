@@ -4,6 +4,7 @@
 #' @param assayName New assay name for cpm data.
 #' @param useAssay Input assay 
 #' @return inSCE Updated SingleCellExperiment object
+#' @family run functions
 #' @export
 #' @author Irzam Sarfraz
 #' @examples

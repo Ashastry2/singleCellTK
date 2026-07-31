@@ -142,6 +142,7 @@
 #' sce <- runSeuratNormalizeData(sce, useAssay = "counts")
 #' }
 #' @return Normalized \code{SingleCellExperiment} object
+#' @family run functions
 #' @export
 runSeuratNormalizeData <- function(inSCE,
                                    useAssay,
@@ -196,6 +197,7 @@ runSeuratNormalizeData <- function(inSCE,
 #' sce <- runSeuratScaleData(sce, useAssay = "counts")
 #' }
 #' @return Scaled \code{SingleCellExperiment} object
+#' @family run functions
 #' @export
 runSeuratScaleData <- function(inSCE,
                                useAssay = "seuratNormData",
@@ -253,6 +255,7 @@ runSeuratScaleData <- function(inSCE,
 #' computation stored
 #' @seealso \code{\link{runFeatureSelection}}, \code{\link{runModelGeneVar}},
 #' \code{\link{getTopHVG}}, \code{\link{plotTopHVG}}
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment rowData rowData<-
 #' @importFrom S4Vectors metadata<-
@@ -459,6 +462,7 @@ runSeuratFindHVG <- function(inSCE,
 #' }
 #' @return Updated \code{SingleCellExperiment} object which now contains the
 #' computed principal components
+#' @family run functions
 #' @export
 #' @importFrom SingleCellExperiment reducedDim<- rowSubset
 #' @importFrom S4Vectors metadata<-
@@ -550,6 +554,7 @@ runSeuratPCA <-
 #' }
 #' @return Updated \code{SingleCellExperiment} object which now contains the
 #' computed independent components
+#' @family run functions
 #' @export
 #' @importFrom SingleCellExperiment reducedDim<- rowSubset
 #' @importFrom S4Vectors metadata<-
@@ -633,6 +638,7 @@ runSeuratICA <-
 #' }
 #' @return Updated \code{SingleCellExperiment} object with jackstraw
 #' computations stored in it
+#' @family run functions
 #' @export
 runSeuratJackStraw <- function(inSCE,
                                useAssay,
@@ -707,6 +713,7 @@ runSeuratJackStraw <- function(inSCE,
 #' plotSeuratJackStraw(sce)
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 plotSeuratJackStraw <-
   function(inSCE,
@@ -748,6 +755,7 @@ plotSeuratJackStraw <-
 #' plotSeuratHVG(sce)
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 plotSeuratHVG <- function(inSCE, labelPoints = 0) {
   seuratObject <- convertSCEToSeurat(inSCE)
@@ -785,6 +793,7 @@ plotSeuratHVG <- function(inSCE, labelPoints = 0) {
 #' plotSeuratReduction(sce, useReduction = "pca")
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 plotSeuratReduction <-
   function(inSCE,
@@ -878,6 +887,7 @@ plotSeuratReduction <-
 #' sce <- runSeuratFindClusters(sce, useAssay = "counts")
 #' }
 #' @return Updated sce object which now contains the computed clusters
+#' @family run functions
 #' @export
 runSeuratFindClusters <- function(inSCE,
                                   useAssay = "seuratNormData",
@@ -967,6 +977,7 @@ runSeuratFindClusters <- function(inSCE,
 #' @param seed Random seed for reproducibility of results.
 #' Default \code{1}.
 #' @return Updated sce object with tSNE computations stored
+#' @family run functions
 #' @export
 #' @importFrom SingleCellExperiment reducedDim<-
 runSeuratTSNE <- function(inSCE,
@@ -1035,6 +1046,7 @@ runSeuratTSNE <- function(inSCE,
 #' sce <- runSeuratUMAP(sce, useReduction = "pca")
 #' }
 #' @return Updated sce object with UMAP computations stored
+#' @family run functions
 #' @export
 #' @importFrom SingleCellExperiment reducedDim<-
 runSeuratUMAP <- function(inSCE,
@@ -1128,6 +1140,7 @@ runSeuratUMAP <- function(inSCE,
 #' plotSeuratElbow(sce)
 #' }
 #' @return plot object
+#' @family plot functions
 #' @export
 plotSeuratElbow <- function(inSCE,
                             significantPC = NULL,
@@ -1227,6 +1240,7 @@ plotSeuratElbow <- function(inSCE,
 #' plotSeuratHeatmap(heatmap)
 #' }
 #' @return plot object
+#' @family run functions
 #' @export
 runSeuratHeatmap <- function(inSCE,
                              useAssay,
@@ -1289,6 +1303,7 @@ runSeuratHeatmap <- function(inSCE,
 #' heatmaps be distrbuted (default is 2)
 #' @param labels list() of labels to draw on heatmaps
 #' @return modified plot object
+#' @family plot functions
 #' @export
 plotSeuratHeatmap <- function(plotObject, dims, ncol, labels) {
   componentsToPlot <- as.integer(gsub("[^0-9.]", "", labels))
@@ -1357,6 +1372,7 @@ plotSeuratHeatmap <- function(plotObject, dims, ncol, labels) {
 #' seurat <- convertSCEToSeurat(sce)
 #' sce <- convertSeuratToSCE(seurat)
 #' @return \code{SingleCellExperiment} output object
+#' @family conversion functions
 #' @export
 convertSeuratToSCE <-
   function(seuratObject,
@@ -1436,6 +1452,7 @@ convertSeuratToSCE <-
 #' seurat <- convertSCEToSeurat(sce)
 #' @return Updated seurat object that contains all data from the input sce
 #' object
+#' @family conversion functions
 #' @export
 #' @importFrom SummarizedExperiment assay assays
 #' @importFrom utils packageVersion
@@ -1746,6 +1763,7 @@ convertSCEToSeurat <-
 #' @param verbose Logical value indicating if informative messages should
 #'  be displayed. Default is \code{TRUE}.
 #' @return Updated SingleCellExperiment object containing the transformed data
+#' @family run functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE", package = "singleCellTK")
@@ -1888,6 +1906,7 @@ runSeuratSCTransform <- function(inSCE,
 #'
 #' @return A \code{SingleCellExperiment} object that contains the
 #' batch-corrected assay inside the \code{altExp} slot of the object
+#' @family run functions
 #' @export
 runSeuratIntegration <- function(inSCE,
                                  useAssay = "counts",
@@ -1980,6 +1999,7 @@ runSeuratIntegration <- function(inSCE,
 #'  be displayed. Default is \code{TRUE}.
 #' @return A \code{SingleCellExperiment} object that contains marker genes
 #' populated in a data.frame stored inside metadata slot.
+#' @family run functions
 #' @export
 runSeuratFindMarkers <- function(inSCE,
                                  cells1 = NULL,
@@ -2115,6 +2135,7 @@ runSeuratFindMarkers <- function(inSCE,
 #'  \code{"heatmap"} and \code{"dot"}, plots for all features are always
 #'  combined into a single plot. Default \code{FALSE}.
 #' @return Plot object
+#' @family plot functions
 #' @export
 plotSeuratGenes <- function(inSCE,
                             useAssay = "seuratNormData",
@@ -2308,6 +2329,7 @@ plotSeuratGenes <- function(inSCE,
 #' @param inSCE Input \code{SingleCellExperiment} object.
 #'
 #' @return A list of variable feature names.
+#' @family accessor functions
 #' @export
 getSeuratVariableFeatures <- function(inSCE) {
   obj <- S4Vectors::metadata(inSCE)$seurat$obj

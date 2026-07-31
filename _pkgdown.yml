@@ -23,6 +23,7 @@ reference:
   - runDecontX
   - plotDecontXResults
   - runSoupX
+  - getSoupX
   - getSoupX<-
   - plotSoupXResults
 - title: "Doublet/Empty Droplet Detection"
@@ -88,6 +89,8 @@ reference:
   - runSeuratTSNE
   - runQuickUMAP
   - runQuickTSNE
+  - getUMAP
+  - getTSNE
   - plotPCA
   - plotUMAP
   - plotTSNE
@@ -118,11 +121,14 @@ reference:
 - contents:
   - runFindMarker
   - getFindMarkerTopTable
+  - findMarkerDiffExp
+  - findMarkerTopTable
   - plotFindMarkerHeatmap
 - title: "Differential Abundance"
 - contents:
   - diffAbundanceFET
   - getDiffAbundanceResults
+  - getDiffAbundanceResults<-
   - plotClusterAbundance
 - title: "Cell Type Labeling"
 - contents:
@@ -131,6 +137,7 @@ reference:
 - contents:
   - getMSigDBTable
   - runEnrichR
+  - getEnrichRResult
   - getEnrichRResult<-
   - runGSVA
   - runVAM
@@ -141,6 +148,9 @@ reference:
   - starts_with("runTSCAN")
   - starts_with("plotTSCAN")
   - getTSCANResults
+  - getTSCANResults<-
+  - listTSCANResults
+  - listTSCANTerminalNodes
 - title: "Seurat Curated Workflow"
 - contents:
   - starts_with("runSeurat")
@@ -205,6 +215,8 @@ reference:
   - qcInputProcess
   - setRowNames
   - subDiffEx
+  - subDiffExttest
+  - subDiffExANOVA
   - summarizeSCE
 - title: "Python Environment Setting"
 - contents:
@@ -297,6 +309,8 @@ navbar:
               href: articles/seurat_curated_workflow.html
             - text: "Celda"
               href: articles/celda_curated_workflow.html
+            - text: "Scanpy"
+              href: articles/scanpy_curated_workflow.html
         - text: "Visualization"
           menu:
           - text: "General Visualization"

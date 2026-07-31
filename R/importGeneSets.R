@@ -51,6 +51,7 @@
 #' # could also be accomplished by setting by = "feature_name" in the
 #' # function call.
 #' sce <- importGeneSetsFromGMT(inSCE = sce, file = gmt, by = NULL)
+#' @family import functions
 #' @export
 importGeneSetsFromGMT <- function(inSCE, file,
                                   collectionName = "GeneSetCollection",
@@ -129,6 +130,9 @@ importGeneSetsFromGMT <- function(inSCE, file,
 #' sce <- importGeneSetsFromList(inSCE = sce,
 #'                              geneSetList = mito,
 #'                              by = "feature_name")
+#' @return The input \code{inSCE} object with the specified MSigDB gene set
+#' collection stored in \code{metadata(inSCE)$sctk$genesets}.
+#' @family import functions
 #' @export
 #' @importFrom SummarizedExperiment rowData
 importGeneSetsFromList <- function(inSCE, geneSetList,
@@ -223,6 +227,9 @@ importGeneSetsFromList <- function(inSCE, geneSetList,
 #' sce <- importGeneSetsFromCollection(inSCE = sce,
 #'                                     geneSetCollection = gsc,
 #'                                     by = "rownames")
+#' @return The input \code{inSCE} object with the mitochondrial gene set stored
+#' in \code{metadata(inSCE)$sctk$genesets} under \code{collectionName}.
+#' @family import functions
 #' @export
 importGeneSetsFromCollection <- function(inSCE, geneSetCollection,
                                          collectionName = "GeneSetCollection",
@@ -356,6 +363,9 @@ importGeneSetsFromCollection <- function(inSCE, geneSetCollection,
 #'                                 species = "Homo sapiens",
 #'                                 mapping = "gene_symbol",
 #'                                 by = "feature_name")
+#' @return The input \code{inSCE} object with the specified MSigDB gene set
+#' collection stored in \code{metadata(inSCE)$sctk$genesets}.
+#' @family import functions
 #' @export
 #' @importFrom SummarizedExperiment rowData
 importGeneSetsFromMSigDB <- function(inSCE, categoryIDs = "H",
@@ -505,6 +515,9 @@ importGeneSetsFromMSigDB <- function(inSCE, categoryIDs = "H",
 #'                          id = "ensembl",
 #'                          collectionName = "human_mito",
 #'                          by = "rownames")
+#' @return The input \code{inSCE} object with the mitochondrial gene set stored
+#' in \code{metadata(inSCE)$sctk$genesets} under \code{collectionName}.
+#' @family import functions
 #' @export
 importMitoGeneSet <- function(inSCE, reference = "human", id = "ensembl",
                               by = "rownames", collectionName = "mito",
@@ -563,6 +576,9 @@ importMitoGeneSet <- function(inSCE, reference = "human", id = "ensembl",
 #'                                     by = "rownames",
 #'                                     collectionName = "Collection2")
 #' collections <- sctkListGeneSetCollections(sce)
+#' @return A \code{character} vector of the names of all gene set collections
+#' stored in \code{metadata(inSCE)$sctk$genesets}, or \code{NULL} if none.
+#' @family accessor functions
 #' @export
 sctkListGeneSetCollections <- function(inSCE) {
   if(!is.null(S4Vectors::metadata(inSCE)$sctk$genesets)) {
@@ -580,6 +596,7 @@ sctkListGeneSetCollections <- function(inSCE) {
 #' @return data.frame, containing MSigDB categories
 #' @author Joshua D. Campbell
 #' @seealso \link{importGeneSetsFromMSigDB} for importing MSigDB gene sets.
+#' @family accessor functions
 #' @export
 #' @examples
 #' getMSigDBTable()

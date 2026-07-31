@@ -27,6 +27,7 @@
 #' \code{method}. When \code{useFeatureSubset} set, label the features in
 #' the subset on the scatter plot created with \code{method} and ignore
 #' \code{hvgNumber}.
+#' @family plot functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE", package = "singleCellTK")

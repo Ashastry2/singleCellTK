@@ -96,6 +96,7 @@
 #' logcounts(sceBatches) <- log1p(counts(sceBatches))
 #' sceBatches <- runLimmaBC(sceBatches)
 #' plotBatchCorrCompare(sceBatches, "LIMMA", condition = "cell_type")
+#' @family plot functions
 #' @export
 #' @author Yichen Wang
 plotBatchCorrCompare <- function(inSCE, corrMat, batch = NULL, condition = NULL,
@@ -224,6 +225,7 @@ plotBatchCorrCompare <- function(inSCE, corrMat, batch = NULL, condition = NULL,
 #' \code{NULL}.
 #' @return A ggplot object of a boxplot of variation explained by batch,
 #' condition, and batch+condition.
+#' @family plot functions
 #' @export
 #' @examples
 #' data('sceBatches', package = 'singleCellTK')
@@ -346,6 +348,7 @@ plotBatchVariance <- function(inSCE, useAssay = NULL, useReddim = NULL,
 #' data('sceBatches', package = 'singleCellTK')
 #' plotSCEBatchFeatureMean(sceBatches, useAssay = "counts")
 #' @return ggplot
+#' @family plot functions
 #' @export
 plotSCEBatchFeatureMean <- function(inSCE, useAssay = NULL, useReddim = NULL,
   useAltExp = NULL, batch = 'batch', xlab='batch', ylab='Feature Mean', ...){

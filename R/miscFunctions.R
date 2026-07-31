@@ -11,6 +11,7 @@
 #' to come from the same sample. Default \code{"sample"}.
 #'
 #' @return A data.frame object of summary metrics.
+#' @family SCE manipulation
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -65,6 +66,7 @@ summarizeSCE <- function(inSCE, useAssay = NULL, sampleVariableName = NULL){
 #' Default: c(0.5, 1)
 #' @return A vector of distinct colors that have been converted to  HEX from
 #' HSV.
+#' @family plot functions
 #' @export
 #' @examples
 #' distinctColors(10)
@@ -122,6 +124,7 @@ distinctColors <- function(n, hues = c("red", "cyan", "orange", "blue",
 #' @return A character vector of \code{n} hex color codes.
 #' @examples
 #' discreteColorPalette(n = 3)
+#' @family plot functions
 #' @export
 discreteColorPalette <- function(n, palette = c("random", "ggplot", "celda"),
                                  seed = 12345, ...) {
@@ -199,6 +202,7 @@ discreteColorPalette <- function(n, palette = c("random", "ggplot", "celda"),
 #' the deduplicated rownames.
 #' @param return.list When set to \code{TRUE}, will return a character vector
 #' of the deduplicated rownames.
+#' @family SCE manipulation
 #' @export
 #' @return By default, a matrix or \linkS4class{SingleCellExperiment} object
 #' with rownames deduplicated.
@@ -247,6 +251,7 @@ dedupRowNames <- function(x, as.rowData = FALSE, return.list = FALSE){
 #' @param dedup Logical. Whether to deduplicate the specified rowNames. Default
 #' \code{TRUE}
 #' @return The input SCE object with rownames updated.
+#' @family accessor functions
 #' @export
 #' @examples
 #' data("scExample", package = "singleCellTK")
@@ -307,6 +312,7 @@ setRowNames <- function(x, rowNames, dedup = TRUE) {
 #' @return A unique, non-NA numeric vector of indices for the matching
 #' features/cells in \code{inSCE}.
 #' @author Yusuke Koga, Joshua Campbell, Yichen Wang
+#' @family SCE manipulation
 #' @export
 retrieveSCEIndex <- function(inSCE, IDs, axis, by = NULL,
                              exactMatch = TRUE, firstMatch = TRUE){
@@ -458,6 +464,7 @@ retrieveSCEIndex <- function(inSCE, IDs, axis, by = NULL,
 #' @param inSCE Input \linkS4class{SingleCellExperiment} object.
 #' @param geneSetCollectionName The name of an imported geneSetCollection.
 #' @return A character vector of available genesets from the collection.
+#' @family accessor functions
 #' @export
 getGenesetNamesFromCollection <- function(inSCE, geneSetCollectionName) {
   geneSet <- .getGeneSetCollection(inSCE, geneSetCollectionName)

@@ -23,6 +23,7 @@
 #' expressed genes in each simulation, and [,,3] contains the mediansignificant
 #' effect size in each simulation. If no genes are significantly differentially
 #' expressed, the median effect size defaults to infinity.
+#' @family simulation functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -92,6 +93,7 @@ downSampleDepth <- function(originalData, useAssay = "counts", minCount = 10, mi
 #' expressed genes in each simulation, and [,,3] contains the mediansignificant
 #' effect size in each simulation. If no genes are significantly differentially
 #' expressed, the median effect size defaults to infinity.
+#' @family simulation functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -145,6 +147,7 @@ downSampleCells <- function(originalData, useAssay = "counts",
 #'
 #' @return A simulated counts matrix, the first row of which contains the 'true'
 #' labels for each virtual cell.
+#' @family simulation functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -178,6 +181,7 @@ generateSimulatedData <- function(totalReads, cells, originalData, realLabels){
 #' simulated.
 #'
 #' @return A matrix of significance information from a snapshot
+#' @family simulation functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -210,6 +214,7 @@ iterateSimulations <- function(originalData, useAssay = "counts", realLabels,
 #'
 #' @describeIn subDiffEx
 #'
+#' @family simulation functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -246,6 +251,7 @@ subDiffEx <- function(tempData){
 #' Nonviable results (such as for genes with 0 counts in a simulated dataset)
 #' are coerced to 1.
 #'
+#' @family simulation functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -283,6 +289,7 @@ subDiffExttest <- function(countMatrix, class.labels, test.type = "t.equalvar") 
 #' Nonviable results (such as for genes with 0 counts in a simulated dataset)
 #' are coerced to 1.
 #'
+#' @family simulation functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
@@ -330,6 +337,7 @@ subDiffExANOVA <- function(countMatrix, condition){
 #'
 #' @return A vector of cohen's d effect sizes for each gene.
 #'
+#' @family simulation functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")

@@ -17,6 +17,7 @@
 #' \dontrun{
 #' exportSCEtoFlatFile(sce_chcl, "sce_chcl")
 #' }
+#' @family export functions
 #' @export
 #' @importFrom SummarizedExperiment colData rowData
 exportSCEtoFlatFile <- function(sce,

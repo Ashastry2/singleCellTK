@@ -11,6 +11,7 @@
 #' to display feature for visualization.
 #'
 #' @return getBiomarker(): A data.frame of expression values
+#' @family accessor functions
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")

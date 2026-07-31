@@ -7,6 +7,7 @@
 #' \code{FALSE}, will return an empty character vector.
 #' @param verbose Show warning if no result found. Default \code{FALSE}
 #' @return A character vector of valid pathway analysis result names.
+#' @family accessor functions
 #' @export
 #' @examples
 #' data(scExample)
@@ -58,6 +59,7 @@ getPathwayResultNames <- function(inSCE, stopIfNone = FALSE, verbose = FALSE){
 #' @param title Title of plot. Default using \code{geneset}.
 #' @param titleSize Size of the title of the plot. Default \code{15}.
 #' @return A \code{ggplot} object for the violin plot
+#' @family plot functions
 #' @export
 #' @examples
 #' data("scExample", package = "singleCellTK")

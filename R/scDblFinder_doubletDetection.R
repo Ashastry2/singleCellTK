@@ -31,6 +31,7 @@
 #' data(scExample, package = "singleCellTK")
 #' sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 #' sce <- runScDblFinder(sce)
+#' @family run functions
 #' @export
 #' @importFrom SummarizedExperiment colData colData<- assayNames assayNames<-
 #' @importFrom S4Vectors metadata<- metadata

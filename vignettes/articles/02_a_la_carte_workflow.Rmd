@@ -351,7 +351,7 @@ After the analysis is done, the result would be presented in the right main pane
 sce <- runFindMarker(sce, useAssay = "logcounts", method = "wilcox", cluster = "cluster")
 ```
 
-By running `runFindMarker()`, SCTK stores a `data.frame` of marker table to the `matadata` slot of the SCE object. The marker table will include all detected markers for each cluster and statistical values associated to each marker. To fetch the table, users can use the command below, and even add filtering parameters.
+By running `runFindMarker()`, SCTK stores a `data.frame` of marker table to the `metadata` slot of the SCE object. The marker table will include all detected markers for each cluster and statistical values associated to each marker. To fetch the table, users can use the command below, and even add filtering parameters.
 
 ```{R getMarkerTable, results="hold"}
 topMarkers <- getFindMarkerTopTable(sce, topN = 1, log2fcThreshold = 0, 

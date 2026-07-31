@@ -21,6 +21,7 @@
 #' data(scExample)
 #' sce2 <- sce
 #' sce <- mergeSCEColData(inSCE1 = sce1, inSCE2 = sce2, id1 = "column_name", id2 = "column_name")
+#' @family SCE manipulation
 #' @export
 mergeSCEColData <- function(inSCE1, inSCE2, id1 = "column_name", id2 = "column_name") {
   # For default case & column_name not in colData
