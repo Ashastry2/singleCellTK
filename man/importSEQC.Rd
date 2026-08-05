@@ -94,3 +94,25 @@ sce <- importSEQC(
     prefix = "pbmc_1k",
     combinedSample = FALSE)
 }
+\seealso{
+Other import functions: 
+\code{\link{importAlevin}()},
+\code{\link{importAnnData}()},
+\code{\link{importBUStools}()},
+\code{\link{importCellRanger}()},
+\code{\link{importCellRangerV2Sample}()},
+\code{\link{importCellRangerV3Sample}()},
+\code{\link{importDropEst}()},
+\code{\link{importExampleData}()},
+\code{\link{importFromFiles}()},
+\code{\link{importGeneSetsFromCollection}()},
+\code{\link{importGeneSetsFromGMT}()},
+\code{\link{importGeneSetsFromList}()},
+\code{\link{importGeneSetsFromMSigDB}()},
+\code{\link{importMitoGeneSet}()},
+\code{\link{importMultipleSources}()},
+\code{\link{importOptimus}()},
+\code{\link{importSTARsolo}()},
+\code{\link{readSingleCellMatrix}()}
+}
+\concept{import functions}

@@ -34,3 +34,18 @@ head(rownames(sce))
 sce <- setRowNames(sce, "feature_name")
 head(rownames(sce))
 }
+\seealso{
+Other accessor functions: 
+\code{\link{getBiomarker}()},
+\code{\link{getDEGTopTable}()},
+\code{\link{getFindMarkerTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getMSigDBTable}()},
+\code{\link{getPathwayResultNames}()},
+\code{\link{getSceParams}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{getTopHVG}()},
+\code{\link{sctkListGeneSetCollections}()},
+\code{\link{setSCTKDisplayRow}()}
+}
+\concept{accessor functions}

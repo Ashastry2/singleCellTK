@@ -42,3 +42,12 @@ res <- iterateSimulations(mouseBrainSubsetSCE, realLabels = "level1class",
                           totalReads = 1000, cells = 10, iterations = 2)
 
 }
+\seealso{
+Other simulation functions: 
+\code{\link{calcEffectSizes}()},
+\code{\link{downSampleCells}()},
+\code{\link{downSampleDepth}()},
+\code{\link{generateSimulatedData}()},
+\code{\link{subDiffEx}()}
+}
+\concept{simulation functions}

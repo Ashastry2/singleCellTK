@@ -25,4 +25,10 @@ selectSCTKVirtualEnvironment(envname = "sctk-reticulate")
 See \code{\link[singleCellTK]{sctkPythonInstallVirtualEnv}} for installation of Python modules into a virtual environment.
 See\code{\link[reticulate]{virtualenv-tools}} for more information on using virtual environments with package \code{\link{reticulate}}.
 See \url{https://rstudio.github.io/reticulate/} for more information on package \code{\link{reticulate}}.
+
+Other Python environment: 
+\code{\link{sctkPythonInstallConda}()},
+\code{\link{sctkPythonInstallVirtualEnv}()},
+\code{\link{selectSCTKConda}()}
 }
+\concept{Python environment}

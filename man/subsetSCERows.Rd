@@ -70,6 +70,19 @@ rowData(sce)$isMito <- ifelse(grepl("^MT-", rowData(sce)$feature_name),
                               "yes", "no")
 sce <- subsetSCERows(sce, rowData = "isMito == 'yes'")
 }
+\seealso{
+Other SCE manipulation: 
+\code{\link{combineSCE}()},
+\code{\link{dedupRowNames}()},
+\code{\link{featureIndex}()},
+\code{\link{mergeSCEColData}()},
+\code{\link{retrieveSCEIndex}()},
+\code{\link{sampleSummaryStats}()},
+\code{\link{subsetSCECols}()},
+\code{\link{summarizeSCE}()},
+\code{\link{trimCounts}()}
+}
 \author{
 Joshua D. Campbell
 }
+\concept{SCE manipulation}

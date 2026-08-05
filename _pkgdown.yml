@@ -1,3 +1,10 @@
+# pkgdown requires `url` -- without it, check_pkgdown() aborts and cross-package
+# links are not resolved. Upstream's site is camplab.net/sctk, but this fork
+# stands alone and has no published site, so this points at the GitHub Pages
+# location that a fork's pkgdown site would default to. Change it if this fork
+# publishes elsewhere.
+url: https://ashastry2.github.io/singleCellTK/
+
 template:
   params:
     bootswatch: yeti

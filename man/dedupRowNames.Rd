@@ -35,3 +35,16 @@ return the unique rownames as character vecetor.
 data("scExample", package = "singleCellTK")
 sce <- dedupRowNames(sce)
 }
+\seealso{
+Other SCE manipulation: 
+\code{\link{combineSCE}()},
+\code{\link{featureIndex}()},
+\code{\link{mergeSCEColData}()},
+\code{\link{retrieveSCEIndex}()},
+\code{\link{sampleSummaryStats}()},
+\code{\link{subsetSCECols}()},
+\code{\link{subsetSCERows}()},
+\code{\link{summarizeSCE}()},
+\code{\link{trimCounts}()}
+}
+\concept{SCE manipulation}

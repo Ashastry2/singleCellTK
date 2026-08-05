@@ -19,3 +19,25 @@ the droplet or cell data or both,depending on the dataType that users provided.
 \description{
 Imports samples from different sources and compiles them into a list of SCE objects
 }
+\seealso{
+Other import functions: 
+\code{\link{importAlevin}()},
+\code{\link{importAnnData}()},
+\code{\link{importBUStools}()},
+\code{\link{importCellRanger}()},
+\code{\link{importCellRangerV2Sample}()},
+\code{\link{importCellRangerV3Sample}()},
+\code{\link{importDropEst}()},
+\code{\link{importExampleData}()},
+\code{\link{importFromFiles}()},
+\code{\link{importGeneSetsFromCollection}()},
+\code{\link{importGeneSetsFromGMT}()},
+\code{\link{importGeneSetsFromList}()},
+\code{\link{importGeneSetsFromMSigDB}()},
+\code{\link{importMitoGeneSet}()},
+\code{\link{importOptimus}()},
+\code{\link{importSEQC}()},
+\code{\link{importSTARsolo}()},
+\code{\link{readSingleCellMatrix}()}
+}
+\concept{import functions}

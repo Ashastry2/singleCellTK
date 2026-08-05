@@ -100,7 +100,21 @@ hvgs <- getTopHVG(sce, useFeatureSubset = NULL,
 \seealso{
 \code{\link{runFeatureSelection}}, \code{\link{runSeuratFindHVG}},
 \code{\link{runModelGeneVar}}, \code{\link{plotTopHVG}}
+
+Other accessor functions: 
+\code{\link{getBiomarker}()},
+\code{\link{getDEGTopTable}()},
+\code{\link{getFindMarkerTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getMSigDBTable}()},
+\code{\link{getPathwayResultNames}()},
+\code{\link{getSceParams}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{sctkListGeneSetCollections}()},
+\code{\link{setRowNames}()},
+\code{\link{setSCTKDisplayRow}()}
 }
 \author{
 Irzam Sarfraz, Yichen Wang
 }
+\concept{accessor functions}

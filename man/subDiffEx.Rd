@@ -93,3 +93,26 @@ output <- res[-1, ]
 fdr <- subDiffExANOVA(output, realLabels)
 
 }
+\seealso{
+Other simulation functions: 
+\code{\link{calcEffectSizes}()},
+\code{\link{downSampleCells}()},
+\code{\link{downSampleDepth}()},
+\code{\link{generateSimulatedData}()},
+\code{\link{iterateSimulations}()}
+
+Other simulation functions: 
+\code{\link{calcEffectSizes}()},
+\code{\link{downSampleCells}()},
+\code{\link{downSampleDepth}()},
+\code{\link{generateSimulatedData}()},
+\code{\link{iterateSimulations}()}
+
+Other simulation functions: 
+\code{\link{calcEffectSizes}()},
+\code{\link{downSampleCells}()},
+\code{\link{downSampleDepth}()},
+\code{\link{generateSimulatedData}()},
+\code{\link{iterateSimulations}()}
+}
+\concept{simulation functions}

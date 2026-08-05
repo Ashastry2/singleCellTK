@@ -69,4 +69,18 @@ getFindMarkerTopTable(mouseBrainSubsetSCE)
 }
 \seealso{
 \code{\link{runFindMarker}}, \code{\link{plotFindMarkerHeatmap}}
+
+Other accessor functions: 
+\code{\link{getBiomarker}()},
+\code{\link{getDEGTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getMSigDBTable}()},
+\code{\link{getPathwayResultNames}()},
+\code{\link{getSceParams}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{getTopHVG}()},
+\code{\link{sctkListGeneSetCollections}()},
+\code{\link{setRowNames}()},
+\code{\link{setSCTKDisplayRow}()}
 }
+\concept{accessor functions}

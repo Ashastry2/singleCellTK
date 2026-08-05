@@ -29,3 +29,18 @@ stored in \code{metadata} slot when analysis is performed.
 data(scExample)
 getPathwayResultNames(sce)
 }
+\seealso{
+Other accessor functions: 
+\code{\link{getBiomarker}()},
+\code{\link{getDEGTopTable}()},
+\code{\link{getFindMarkerTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getMSigDBTable}()},
+\code{\link{getSceParams}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{getTopHVG}()},
+\code{\link{sctkListGeneSetCollections}()},
+\code{\link{setRowNames}()},
+\code{\link{setSCTKDisplayRow}()}
+}
+\concept{accessor functions}

@@ -29,4 +29,10 @@ See \code{\link[singleCellTK]{sctkPythonInstallConda}} for installation of Pytho
 See\code{\link[reticulate]{conda-tools}} for more information on using Conda environments with package \code{\link{reticulate}}.
 See \url{https://rstudio.github.io/reticulate/} for more information on package \code{\link{reticulate}}.
 See \url{https://docs.conda.io/en/latest/} for more information on Conda environments.
+
+Other Python environment: 
+\code{\link{sctkPythonInstallConda}()},
+\code{\link{sctkPythonInstallVirtualEnv}()},
+\code{\link{selectSCTKVirtualEnvironment}()}
 }
+\concept{Python environment}

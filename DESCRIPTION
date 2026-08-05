@@ -144,6 +144,6 @@ Suggests:
     SeuratObject,
     optparse
 VignetteBuilder: knitr
-URL: https://www.camplab.net/sctk/
+URL: https://ashastry2.github.io/singleCellTK, https://github.com/Ashastry2/singleCellTK
 BugReports: https://github.com/Ashastry2/singleCellTK/issues
 Language: en-US

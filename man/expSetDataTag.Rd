@@ -25,3 +25,9 @@ Set tag to an assay or a data item in the input SCE object.
 data(scExample, package = "singleCellTK")
 sce <- expSetDataTag(sce, "raw", "counts")
 }
+\seealso{
+Other assay tagging: 
+\code{\link{expDeleteDataTag}()},
+\code{\link{expTaggedData}()}
+}
+\concept{assay tagging}

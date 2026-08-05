@@ -37,3 +37,10 @@ Generates a Seurat object containing data from \code{inSCE}.
 \description{
 Export data in Seurat object
 }
+\seealso{
+Other export functions: 
+\code{\link{exportSCE}()},
+\code{\link{exportSCEtoAnnData}()},
+\code{\link{exportSCEtoFlatFile}()}
+}
+\concept{export functions}

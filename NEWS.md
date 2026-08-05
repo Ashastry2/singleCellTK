@@ -1,3 +1,46 @@
+Changes in the `agentic_ai_workshop` fork branch
+================================================================================
+
+**Bug fixes (behaviour changes — please read)**
+
+* `plotSCEHeatmap()` now scales **features (rows)**, matching what the `scale`
+  argument has always been documented to do. It previously z-scored each *cell*
+  across genes, because `base::scale()` standardizes columns. Since `scale = TRUE`
+  is the default, **this changes the appearance of nearly every heatmap the
+  function produces.** The previous output was not an error — it was the wrong
+  picture, drawn convincingly.
+* `plotSCEHeatmap(scale = "min-max")` now works. The documentation specified
+  `"min-max"` but the code only tested for `"min_max"`, so the documented
+  spelling silently applied no scaling at all. Both spellings are now accepted.
+  Min-max scaling is likewise now per feature rather than per cell, and a
+  zero-variance feature yields 0 rather than `NaN`.
+* `getTopHVG()` no longer pads its result with `NA`. When reading a stored
+  feature subset (`useFeatureSubset`, the default path), `hvgNumber` was never
+  clamped to the number of features actually stored, so a 97-feature subset
+  returned a length-2000 vector containing 1903 `NA`s, which then propagated
+  into any downstream subsetting. `hvgNumber = 0` also returned two elements
+  rather than none, because `1:0` is `c(1, 0)`.
+
+**Documentation**
+
+* Added `@family` tags to 221 exported functions, so the reference index groups
+  by function family and each help page cross-links to its siblings.
+* All 237 documented topics are now covered by the `_pkgdown.yml` reference
+  index; 12 were previously in no section at all, which fails a pkgdown build.
+* Added the `url` field required by `pkgdown::check_pkgdown()`.
+* Restored 207 article images that were referenced but missing from
+  `vignettes/articles/`, so a clean pkgdown build no longer produces 207 broken
+  images.
+* Added `inst/CITATION`, so `citation("singleCellTK")` reports both papers
+  instead of an auto-generated stub.
+* Corrected the stale Bioconductor 3.6 version floor and added the missing
+  `anndata` dependency to the documented pip install line.
+* Fixed a documented `runLIGER()` method that is not exported, a `matadata`
+  typo, an invalid `{shell}` knitr engine, and an unevaluated `git clone` chunk.
+* Added `CONTRIBUTING.md`, `AGENTS.md`, `docs/architecture.md`,
+  `docs/adding-a-new-tool.md`, and architecture decision records in `docs/adr/`.
+* Repository metadata now points at this fork rather than upstream.
+
 Changes in Version 2.18.0 (2025-04-15)
 ================================================================================
 * Updated call to msigdbr to work with newer version

@@ -45,3 +45,9 @@ data(scExample, package = "singleCellTK")
 sce <- expSetDataTag(sce, "raw", "counts")
 tags <- expTaggedData(sce)
 }
+\seealso{
+Other assay tagging: 
+\code{\link{expDeleteDataTag}()},
+\code{\link{expSetDataTag}()}
+}
+\concept{assay tagging}

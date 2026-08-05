@@ -66,7 +66,19 @@ ix <- featureIndex(features = c("MT-CYB", "MT-ND2"),
 '\link[scater]{retrieveFeatureInfo}' from package \code{'scater'}
 and \code{link{regex}} for how to use regular expressions when
 \code{exactMatch = FALSE}.
+
+Other SCE manipulation: 
+\code{\link{combineSCE}()},
+\code{\link{dedupRowNames}()},
+\code{\link{mergeSCEColData}()},
+\code{\link{retrieveSCEIndex}()},
+\code{\link{sampleSummaryStats}()},
+\code{\link{subsetSCECols}()},
+\code{\link{subsetSCERows}()},
+\code{\link{summarizeSCE}()},
+\code{\link{trimCounts}()}
 }
 \author{
 Yusuke Koga, Joshua D. Campbell
 }
+\concept{SCE manipulation}

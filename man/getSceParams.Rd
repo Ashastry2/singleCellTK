@@ -35,3 +35,18 @@ If \code{writeYAML} TRUE, a yaml object will be generated. If FALSE, character o
 \description{
 Extract QC parameters from the SingleCellExperiment object
 }
+\seealso{
+Other accessor functions: 
+\code{\link{getBiomarker}()},
+\code{\link{getDEGTopTable}()},
+\code{\link{getFindMarkerTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getMSigDBTable}()},
+\code{\link{getPathwayResultNames}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{getTopHVG}()},
+\code{\link{sctkListGeneSetCollections}()},
+\code{\link{setRowNames}()},
+\code{\link{setSCTKDisplayRow}()}
+}
+\concept{accessor functions}

@@ -214,9 +214,16 @@ plotSCEHeatmap <- function(inSCE, useAssay = 'logcounts', useReducedDim = NULL,
   
   .minmax<-function(mat){
     min_max<- function(x) {
-      new_x =  (x - min(x))/ (max(x) - min(x))
+      rng <- max(x) - min(x)
+      # a feature with no variance would give 0/0; keep it at zero instead of NaN
+      if (rng == 0) return(rep(0, length(x)))
+      new_x =  (x - min(x))/ rng
       return(new_x)}
-    new_mat<-as.matrix(apply(mat,FUN = min_max,MARGIN = 2))
+    # Rows are features, columns are cells, and `scale` is documented as acting
+    # "on each row". apply() over MARGIN = 1 returns the result transposed, so
+    # transpose it back.
+    new_mat<-as.matrix(t(apply(mat,FUN = min_max,MARGIN = 1)))
+    dimnames(new_mat) <- dimnames(mat)
     return(new_mat)
     }
   
@@ -270,8 +277,14 @@ plotSCEHeatmap <- function(inSCE, useAssay = 'logcounts', useReducedDim = NULL,
   ### Scaling should be done before aggregating
   if (isTRUE(doLog)) assay(SCE) <- log1p(assay(SCE))
   if(isTRUE(scale)) scale <- "zscore"
+  # accept both spellings; the documentation says "min-max", the original code
+  # only tested for "min_max", so the documented spelling silently did nothing
+  if (identical(scale, "min-max")) scale <- "min_max"
   if ((scale == "zscore")) {
-    assay(SCE) <- as.matrix(base::scale(assay(SCE)))
+    # Rows are features, columns are cells. base::scale() standardizes COLUMNS,
+    # so scaling the assay directly z-scored each cell across genes, while
+    # `scale` is documented as acting "on each row". Transpose around it.
+    assay(SCE) <- as.matrix(t(base::scale(t(assay(SCE)))))
   } else if (scale ==  "min_max") {
     assay(SCE) <- as.matrix(.minmax(assay(SCE)))
   }    

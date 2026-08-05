@@ -59,4 +59,10 @@ See \url{https://rstudio.github.io/reticulate/} for more information on package 
 See \code{\link[singleCellTK]{selectSCTKConda}} for reloading the Conda environment if R is restarted without
 going through the whole installation process again.
 See \url{https://docs.conda.io/en/latest/} for more information on Conda environments.
+
+Other Python environment: 
+\code{\link{sctkPythonInstallVirtualEnv}()},
+\code{\link{selectSCTKConda}()},
+\code{\link{selectSCTKVirtualEnvironment}()}
 }
+\concept{Python environment}

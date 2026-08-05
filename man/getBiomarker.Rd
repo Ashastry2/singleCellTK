@@ -41,3 +41,18 @@ data("mouseBrainSubsetSCE")
 getBiomarker(mouseBrainSubsetSCE, gene="C1qa")
 
 }
+\seealso{
+Other accessor functions: 
+\code{\link{getDEGTopTable}()},
+\code{\link{getFindMarkerTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getMSigDBTable}()},
+\code{\link{getPathwayResultNames}()},
+\code{\link{getSceParams}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{getTopHVG}()},
+\code{\link{sctkListGeneSetCollections}()},
+\code{\link{setRowNames}()},
+\code{\link{setSCTKDisplayRow}()}
+}
+\concept{accessor functions}

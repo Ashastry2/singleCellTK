@@ -40,4 +40,10 @@ See \code{\link{virtualenv_install}} for more description of the installation pa
 See \url{https://rstudio.github.io/reticulate/} for more information on package \code{\link{reticulate}}.
 See \code{\link[singleCellTK]{selectSCTKVirtualEnvironment}} for reloading the virtual environment if R is restarted without
 going through the whole installation process again.
+
+Other Python environment: 
+\code{\link{sctkPythonInstallConda}()},
+\code{\link{selectSCTKConda}()},
+\code{\link{selectSCTKVirtualEnvironment}()}
 }
+\concept{Python environment}

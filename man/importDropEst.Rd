@@ -61,3 +61,25 @@ found in the DropEst rds, they will be added to the SCE metadata field
 sce <- importDropEst(sampleDirs = system.file("extdata/dropEst_scg71", package = "singleCellTK"),
                      sampleNames = 'scg71')
 }
+\seealso{
+Other import functions: 
+\code{\link{importAlevin}()},
+\code{\link{importAnnData}()},
+\code{\link{importBUStools}()},
+\code{\link{importCellRanger}()},
+\code{\link{importCellRangerV2Sample}()},
+\code{\link{importCellRangerV3Sample}()},
+\code{\link{importExampleData}()},
+\code{\link{importFromFiles}()},
+\code{\link{importGeneSetsFromCollection}()},
+\code{\link{importGeneSetsFromGMT}()},
+\code{\link{importGeneSetsFromList}()},
+\code{\link{importGeneSetsFromMSigDB}()},
+\code{\link{importMitoGeneSet}()},
+\code{\link{importMultipleSources}()},
+\code{\link{importOptimus}()},
+\code{\link{importSEQC}()},
+\code{\link{importSTARsolo}()},
+\code{\link{readSingleCellMatrix}()}
+}
+\concept{import functions}

@@ -40,3 +40,10 @@ data(scExample)
 exportSCE(sce, format = "SCE")
 }
 }
+\seealso{
+Other export functions: 
+\code{\link{exportSCEToSeurat}()},
+\code{\link{exportSCEtoAnnData}()},
+\code{\link{exportSCEtoFlatFile}()}
+}
+\concept{export functions}

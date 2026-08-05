@@ -42,3 +42,22 @@ Saves the HTML report in the specified output directory.
 A  function to generate .html Rmarkdown report containing the
 visualizations of the \code{\link{runDEAnalysis}} function output
 }
+\seealso{
+Other report functions: 
+\code{\link{reportCellQC}()},
+\code{\link{reportClusterAbundance}()},
+\code{\link{reportDiffAbundanceFET}()},
+\code{\link{reportDropletQC}()},
+\code{\link{reportFindMarker}()},
+\code{\link{reportQCTool}()},
+\code{\link{reportSeurat}()},
+\code{\link{reportSeuratClustering}()},
+\code{\link{reportSeuratDimRed}()},
+\code{\link{reportSeuratFeatureSelection}()},
+\code{\link{reportSeuratMarkerSelection}()},
+\code{\link{reportSeuratNormalization}()},
+\code{\link{reportSeuratResults}()},
+\code{\link{reportSeuratRun}()},
+\code{\link{reportSeuratScaling}()}
+}
+\concept{report functions}

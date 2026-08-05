@@ -19,7 +19,21 @@ getMSigDBTable()
 }
 \seealso{
 \link{importGeneSetsFromMSigDB} for importing MSigDB gene sets.
+
+Other accessor functions: 
+\code{\link{getBiomarker}()},
+\code{\link{getDEGTopTable}()},
+\code{\link{getFindMarkerTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getPathwayResultNames}()},
+\code{\link{getSceParams}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{getTopHVG}()},
+\code{\link{sctkListGeneSetCollections}()},
+\code{\link{setRowNames}()},
+\code{\link{setSCTKDisplayRow}()}
 }
 \author{
 Joshua D. Campbell
 }
+\concept{accessor functions}

@@ -54,3 +54,10 @@ data(sce_chcl, package = "scds")
 exportSCEtoAnnData(sce=sce_chcl, compression="gzip")
 }
 }
+\seealso{
+Other export functions: 
+\code{\link{exportSCE}()},
+\code{\link{exportSCEToSeurat}()},
+\code{\link{exportSCEtoFlatFile}()}
+}
+\concept{export functions}

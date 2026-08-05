@@ -36,3 +36,10 @@ objects in sceList. The colData is merged.
 \description{
 Generate HTAN manifest file for droplet and cell count data
 }
+\seealso{
+Other QC pipeline: 
+\code{\link{constructSCE}()},
+\code{\link{generateHTANMeta}()},
+\code{\link{qcInputProcess}()}
+}
+\concept{QC pipeline}

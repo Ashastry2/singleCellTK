@@ -38,3 +38,16 @@ data(scExample)
 sce2 <- sce
 sce <- mergeSCEColData(inSCE1 = sce1, inSCE2 = sce2, id1 = "column_name", id2 = "column_name")
 }
+\seealso{
+Other SCE manipulation: 
+\code{\link{combineSCE}()},
+\code{\link{dedupRowNames}()},
+\code{\link{featureIndex}()},
+\code{\link{retrieveSCEIndex}()},
+\code{\link{sampleSummaryStats}()},
+\code{\link{subsetSCECols}()},
+\code{\link{subsetSCERows}()},
+\code{\link{summarizeSCE}()},
+\code{\link{trimCounts}()}
+}
+\concept{SCE manipulation}

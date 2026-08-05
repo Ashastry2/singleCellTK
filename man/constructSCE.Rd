@@ -18,3 +18,10 @@ the count matrix.
 \description{
 Create SingleCellExperiment object from csv or txt input
 }
+\seealso{
+Other QC pipeline: 
+\code{\link{generateHTANMeta}()},
+\code{\link{generateMeta}()},
+\code{\link{qcInputProcess}()}
+}
+\concept{QC pipeline}

@@ -130,8 +130,6 @@ importGeneSetsFromGMT <- function(inSCE, file,
 #' sce <- importGeneSetsFromList(inSCE = sce,
 #'                              geneSetList = mito,
 #'                              by = "feature_name")
-#' @return The input \code{inSCE} object with the specified MSigDB gene set
-#' collection stored in \code{metadata(inSCE)$sctk$genesets}.
 #' @family import functions
 #' @export
 #' @importFrom SummarizedExperiment rowData
@@ -227,8 +225,6 @@ importGeneSetsFromList <- function(inSCE, geneSetList,
 #' sce <- importGeneSetsFromCollection(inSCE = sce,
 #'                                     geneSetCollection = gsc,
 #'                                     by = "rownames")
-#' @return The input \code{inSCE} object with the mitochondrial gene set stored
-#' in \code{metadata(inSCE)$sctk$genesets} under \code{collectionName}.
 #' @family import functions
 #' @export
 importGeneSetsFromCollection <- function(inSCE, geneSetCollection,
@@ -576,8 +572,6 @@ importMitoGeneSet <- function(inSCE, reference = "human", id = "ensembl",
 #'                                     by = "rownames",
 #'                                     collectionName = "Collection2")
 #' collections <- sctkListGeneSetCollections(sce)
-#' @return A \code{character} vector of the names of all gene set collections
-#' stored in \code{metadata(inSCE)$sctk$genesets}, or \code{NULL} if none.
 #' @family accessor functions
 #' @export
 sctkListGeneSetCollections <- function(inSCE) {

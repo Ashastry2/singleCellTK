@@ -44,6 +44,19 @@ with one another.
 data(scExample)
 sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 }
+\seealso{
+Other SCE manipulation: 
+\code{\link{combineSCE}()},
+\code{\link{dedupRowNames}()},
+\code{\link{featureIndex}()},
+\code{\link{mergeSCEColData}()},
+\code{\link{retrieveSCEIndex}()},
+\code{\link{sampleSummaryStats}()},
+\code{\link{subsetSCERows}()},
+\code{\link{summarizeSCE}()},
+\code{\link{trimCounts}()}
+}
 \author{
 Joshua D. Campbell
 }
+\concept{SCE manipulation}

@@ -25,3 +25,16 @@ data(sce_chcl, package = "scds")
 assay(sce_chcl, "countsTrimmed") <- trimCounts(assay(sce_chcl, "counts"),
                                                c(10, -10))
 }
+\seealso{
+Other SCE manipulation: 
+\code{\link{combineSCE}()},
+\code{\link{dedupRowNames}()},
+\code{\link{featureIndex}()},
+\code{\link{mergeSCEColData}()},
+\code{\link{retrieveSCEIndex}()},
+\code{\link{sampleSummaryStats}()},
+\code{\link{subsetSCECols}()},
+\code{\link{subsetSCERows}()},
+\code{\link{summarizeSCE}()}
+}
+\concept{SCE manipulation}

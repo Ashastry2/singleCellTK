@@ -1,8 +1,23 @@
 # Static Bug Candidates
 
-**These are UNVERIFIED static candidates. Every entry requires runtime confirmation before
-being treated as a real defect.** No code was executed, the package was not loaded, and its
-dependency tree was not resolved. Nothing here has been fixed — this pass only catalogues.
+> ## Verification status (updated 2026-08-01, runtime pass)
+>
+> Three candidates have now been tested against a loaded package. **Two confirmed and fixed,
+> one dismissed.** The remaining 32 are still unverified.
+>
+> | Candidate | Outcome |
+> |---|---|
+> | `R/getTopHVG.R:103` — `NA` padding | ✅ **CONFIRMED, FIXED.** A stored 97-feature subset returned a length-**2000** vector containing **1903 `NA`s**. Also fixed the `hvgNumber = 0` case, which returned 2 elements. Regression test in `tests/testthat/test-featureSelection.R`. |
+> | `R/plotSCEHeatmap.R:218,273` — wrong scaling margin | ✅ **CONFIRMED, FIXED.** Verified by extracting the heatmap's matrix: columns (cells) were z-scored, rows (genes) were not. The documented `"min-max"` spelling was also confirmed to be a silent no-op. Regression test in `tests/testthat/test-plotting.R`. |
+> | `R/miscFunctions.R:17` — example calls a non-existent argument | ❌ **DISMISSED — false positive.** `summarizeSCE(sce, sample = NULL)` runs correctly. R's partial argument matching resolves `sample` to `sampleVariableName` unambiguously, since no other formal shares that prefix. The example was tidied to use the full name, but it was never broken and `R CMD check` would not have flagged it. |
+>
+> That is a 2-of-3 hit rate on the candidates judged most likely to be real. **Treat the
+> remaining 32 accordingly** — they are leads, and roughly a third may not survive contact
+> with a runtime.
+
+**The 32 unverified entries below still require runtime confirmation before being treated as
+real defects.** They were produced without executing any code, loading the package, or
+resolving its dependency tree.
 
 Scope: the 87 files in `R/`.
 

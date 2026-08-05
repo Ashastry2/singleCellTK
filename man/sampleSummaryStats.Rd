@@ -43,3 +43,16 @@ sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 sce <- sampleSummaryStats(sce, simple = TRUE)
 getSampleSummaryStatsTable(sce, statsName = "qc_table")
 }
+\seealso{
+Other SCE manipulation: 
+\code{\link{combineSCE}()},
+\code{\link{dedupRowNames}()},
+\code{\link{featureIndex}()},
+\code{\link{mergeSCEColData}()},
+\code{\link{retrieveSCEIndex}()},
+\code{\link{subsetSCECols}()},
+\code{\link{subsetSCERows}()},
+\code{\link{summarizeSCE}()},
+\code{\link{trimCounts}()}
+}
+\concept{SCE manipulation}

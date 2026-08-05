@@ -219,3 +219,25 @@ sce <- importCellRangerV3(
     sampleNames = "hgmm1kv3",
     dataType = "filtered")
 }
+\seealso{
+Other import functions: 
+\code{\link{importAlevin}()},
+\code{\link{importAnnData}()},
+\code{\link{importBUStools}()},
+\code{\link{importCellRangerV2Sample}()},
+\code{\link{importCellRangerV3Sample}()},
+\code{\link{importDropEst}()},
+\code{\link{importExampleData}()},
+\code{\link{importFromFiles}()},
+\code{\link{importGeneSetsFromCollection}()},
+\code{\link{importGeneSetsFromGMT}()},
+\code{\link{importGeneSetsFromList}()},
+\code{\link{importGeneSetsFromMSigDB}()},
+\code{\link{importMitoGeneSet}()},
+\code{\link{importMultipleSources}()},
+\code{\link{importOptimus}()},
+\code{\link{importSEQC}()},
+\code{\link{importSTARsolo}()},
+\code{\link{readSingleCellMatrix}()}
+}
+\concept{import functions}

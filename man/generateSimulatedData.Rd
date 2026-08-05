@@ -36,3 +36,12 @@ res <- generateSimulatedData(
          realLabels = colData(mouseBrainSubsetSCE)[, "level1class"])
 
 }
+\seealso{
+Other simulation functions: 
+\code{\link{calcEffectSizes}()},
+\code{\link{downSampleCells}()},
+\code{\link{downSampleDepth}()},
+\code{\link{iterateSimulations}()},
+\code{\link{subDiffEx}()}
+}
+\concept{simulation functions}

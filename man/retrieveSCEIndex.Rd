@@ -49,6 +49,19 @@ data(scExample, package = "singleCellTK")
 retrieveSCEIndex(inSCE = sce, IDs = "ENSG00000205542",
  axis = "row")
 }
+\seealso{
+Other SCE manipulation: 
+\code{\link{combineSCE}()},
+\code{\link{dedupRowNames}()},
+\code{\link{featureIndex}()},
+\code{\link{mergeSCEColData}()},
+\code{\link{sampleSummaryStats}()},
+\code{\link{subsetSCECols}()},
+\code{\link{subsetSCERows}()},
+\code{\link{summarizeSCE}()},
+\code{\link{trimCounts}()}
+}
 \author{
 Yusuke Koga, Joshua Campbell, Yichen Wang
 }
+\concept{SCE manipulation}

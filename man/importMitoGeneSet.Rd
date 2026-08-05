@@ -42,6 +42,9 @@ any matching features. Default \code{TRUE}.}
 A \link[SingleCellExperiment]{SingleCellExperiment} object
 with gene set from \code{collectionName} output stored to the
 \link{metadata} slot.
+
+The input \code{inSCE} object with the mitochondrial gene set stored
+in \code{metadata(inSCE)$sctk$genesets} under \code{collectionName}.
 }
 \description{
 Imports mitochondrial gene sets and  stores it in the metadata of the
@@ -70,7 +73,28 @@ sce <- importMitoGeneSet(inSCE = sce,
 \link{importGeneSetsFromList} for importing from lists,
 \link{importGeneSetsFromGMT} for importing from GMT files, and
 \linkS4class{GeneSetCollection} objects.
+
+Other import functions: 
+\code{\link{importAlevin}()},
+\code{\link{importAnnData}()},
+\code{\link{importBUStools}()},
+\code{\link{importCellRanger}()},
+\code{\link{importCellRangerV2Sample}()},
+\code{\link{importCellRangerV3Sample}()},
+\code{\link{importDropEst}()},
+\code{\link{importExampleData}()},
+\code{\link{importFromFiles}()},
+\code{\link{importGeneSetsFromCollection}()},
+\code{\link{importGeneSetsFromGMT}()},
+\code{\link{importGeneSetsFromList}()},
+\code{\link{importGeneSetsFromMSigDB}()},
+\code{\link{importMultipleSources}()},
+\code{\link{importOptimus}()},
+\code{\link{importSEQC}()},
+\code{\link{importSTARsolo}()},
+\code{\link{readSingleCellMatrix}()}
 }
 \author{
 Rui Hong
 }
+\concept{import functions}

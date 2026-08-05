@@ -1,14 +1,32 @@
 # Next Pass — Work Requiring a Runtime
 
+> ## ⚠️ Partly superseded — see [`handoffs/step-6-runtime-pass.md`](handoffs/step-6-runtime-pass.md)
+>
+> A runtime pass ran on 2026-08-01 and completed several items below. Two premises of this
+> document were **wrong**:
+>
+> - **The dependencies were already installed.** All 88 hard dependencies and all 19
+>   `Suggests`. There was no hour-long install to do.
+> - **`man/` was always regeneratable.** The Step 4 claim that it could not be was a
+>   mis-invocation (`roxygen2::roxygenise(load_code = "source")` rather than the default
+>   `pkgload` loader), not a missing-dependency problem. `devtools::document()` worked
+>   immediately.
+>
+> **Now done:** P0.1 (`man/` regenerated, `NAMESPACE` unchanged, `checkRd` issues unchanged at
+> 73), pkgdown topic coverage verified (237/237), and the first three bug candidates
+> triaged — **2 confirmed and fixed with regression tests, 1 dismissed as a false positive.**
+>
+> **Still open:** everything else below, plus two new items — the installed Bioconductor is
+> **3.19** while the package targets 3.20/3.21, which causes all 6 baseline test errors; and
+> **pandoc is not installed**, which blocks a full `pkgdown::build_site()`.
+
 Everything here was deliberately **not** done in the July 2026 static pass, because doing it
 responsibly requires the package installed and its 88 dependencies resolved. Each item names
 what must be true before it can be attempted, and roughly what it costs.
 
-**Prerequisite for almost all of this:**
+**Prerequisite for almost all of this** (already satisfied in this environment):
 
 ```r
-BiocManager::install(version = "3.20")
-devtools::install_deps(dependencies = TRUE)   # slow — the better part of an hour
 devtools::load_all()
 ```
 

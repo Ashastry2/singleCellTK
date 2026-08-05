@@ -32,3 +32,8 @@ data(scExample, package = "singleCellTK")
 seurat <- convertSCEToSeurat(sce)
 sce <- convertSeuratToSCE(seurat)
 }
+\seealso{
+Other conversion functions: 
+\code{\link{convertSCEToSeurat}()}
+}
+\concept{conversion functions}

@@ -33,3 +33,16 @@ Combine a list of SingleCellExperiment objects as one SingleCellExperiment objec
 data(scExample, package = "singleCellTK")
 combinedsce <- combineSCE(list(sce,sce), by.r = NULL, by.c = NULL, combined = TRUE)
 }
+\seealso{
+Other SCE manipulation: 
+\code{\link{dedupRowNames}()},
+\code{\link{featureIndex}()},
+\code{\link{mergeSCEColData}()},
+\code{\link{retrieveSCEIndex}()},
+\code{\link{sampleSummaryStats}()},
+\code{\link{subsetSCECols}()},
+\code{\link{subsetSCERows}()},
+\code{\link{summarizeSCE}()},
+\code{\link{trimCounts}()}
+}
+\concept{SCE manipulation}

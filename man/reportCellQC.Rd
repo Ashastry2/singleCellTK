@@ -42,3 +42,22 @@ sce <- runCellQC(sce)
 reportCellQC(inSCE = sce)
 }
 }
+\seealso{
+Other report functions: 
+\code{\link{reportClusterAbundance}()},
+\code{\link{reportDiffAbundanceFET}()},
+\code{\link{reportDiffExp}()},
+\code{\link{reportDropletQC}()},
+\code{\link{reportFindMarker}()},
+\code{\link{reportQCTool}()},
+\code{\link{reportSeurat}()},
+\code{\link{reportSeuratClustering}()},
+\code{\link{reportSeuratDimRed}()},
+\code{\link{reportSeuratFeatureSelection}()},
+\code{\link{reportSeuratMarkerSelection}()},
+\code{\link{reportSeuratNormalization}()},
+\code{\link{reportSeuratResults}()},
+\code{\link{reportSeuratRun}()},
+\code{\link{reportSeuratScaling}()}
+}
+\concept{report functions}

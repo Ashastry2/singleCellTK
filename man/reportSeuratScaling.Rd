@@ -54,3 +54,22 @@ Generates an HTML report for Seurat Scaling
  and returns the SCE object with the results computed and stored
  inside the object.
 }
+\seealso{
+Other report functions: 
+\code{\link{reportCellQC}()},
+\code{\link{reportClusterAbundance}()},
+\code{\link{reportDiffAbundanceFET}()},
+\code{\link{reportDiffExp}()},
+\code{\link{reportDropletQC}()},
+\code{\link{reportFindMarker}()},
+\code{\link{reportQCTool}()},
+\code{\link{reportSeurat}()},
+\code{\link{reportSeuratClustering}()},
+\code{\link{reportSeuratDimRed}()},
+\code{\link{reportSeuratFeatureSelection}()},
+\code{\link{reportSeuratMarkerSelection}()},
+\code{\link{reportSeuratNormalization}()},
+\code{\link{reportSeuratResults}()},
+\code{\link{reportSeuratRun}()}
+}
+\concept{report functions}

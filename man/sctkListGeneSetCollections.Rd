@@ -39,7 +39,21 @@ collections <- sctkListGeneSetCollections(sce)
 \link{importGeneSetsFromGMT} for importing from GMT files,
 \linkS4class{GeneSetCollection} objects, and \link{importGeneSetsFromMSigDB}
 for importing MSigDB gene sets.
+
+Other accessor functions: 
+\code{\link{getBiomarker}()},
+\code{\link{getDEGTopTable}()},
+\code{\link{getFindMarkerTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getMSigDBTable}()},
+\code{\link{getPathwayResultNames}()},
+\code{\link{getSceParams}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{getTopHVG}()},
+\code{\link{setRowNames}()},
+\code{\link{setSCTKDisplayRow}()}
 }
 \author{
 Joshua D. Campbell
 }
+\concept{accessor functions}

@@ -27,3 +27,12 @@ res <- calcEffectSizes(assay(mouseBrainSubsetSCE, "counts"),
                        condition = colData(mouseBrainSubsetSCE)$level1class)
 
 }
+\seealso{
+Other simulation functions: 
+\code{\link{downSampleCells}()},
+\code{\link{downSampleDepth}()},
+\code{\link{generateSimulatedData}()},
+\code{\link{iterateSimulations}()},
+\code{\link{subDiffEx}()}
+}
+\concept{simulation functions}

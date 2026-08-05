@@ -77,3 +77,8 @@ Converts sce object to seurat while retaining all assays and metadata
 data(scExample, package = "singleCellTK")
 seurat <- convertSCEToSeurat(sce)
 }
+\seealso{
+Other conversion functions: 
+\code{\link{convertSeuratToSCE}()}
+}
+\concept{conversion functions}

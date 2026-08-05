@@ -41,3 +41,10 @@ data(sce_chcl, package = "scds")
 exportSCEtoFlatFile(sce_chcl, "sce_chcl")
 }
 }
+\seealso{
+Other export functions: 
+\code{\link{exportSCE}()},
+\code{\link{exportSCEToSeurat}()},
+\code{\link{exportSCEtoAnnData}()}
+}
+\concept{export functions}

@@ -45,3 +45,33 @@ test_that(desc = "Testing FindHVG", {
     testthat::expect_true(inherits(vm2, "ggplot"))
     testthat::expect_true(inherits(vm3, "ggplot"))
 })
+
+test_that(desc = "getTopHVG does not pad its result with NA", {
+    # Regression test. getTopHVG() clamped `hvgNumber` to the number of
+    # available features only on the `useFeatureSubset = NULL` branch. On the
+    # `useFeatureSubset` branch `hvgNumber` kept its default of 2000, and the
+    # final `topGenes[1:hvgNumber]` then padded the result with NA whenever the
+    # stored feature subset held fewer than `hvgNumber` features.
+    data(scExample, package = "singleCellTK")
+    sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
+    sce <- runNormalization(sce, useAssay = "counts",
+                            outAssayName = "logcounts",
+                            normalizationMethod = "logNormCounts")
+    sce <- runModelGeneVar(sce, useAssay = "logcounts")
+    sce <- setTopHVG(sce, method = "modelGeneVar", hvgNumber = 100,
+                     featureSubsetName = "hvfSmall")
+    nStored <- sum(SingleCellExperiment::rowSubset(sce, "hvfSmall"))
+
+    # default hvgNumber (2000) is far larger than the stored subset
+    hvg <- getTopHVG(sce, useFeatureSubset = "hvfSmall")
+    expect_false(any(is.na(hvg)))
+    expect_equal(length(hvg), nStored)
+
+    # an explicit hvgNumber below the subset size must still truncate
+    expect_equal(length(getTopHVG(sce, useFeatureSubset = "hvfSmall",
+                                  hvgNumber = 10)), 10)
+
+    # `1:hvgNumber` returned c(1, 0) -- two elements -- when hvgNumber was 0
+    expect_equal(length(getTopHVG(sce, useFeatureSubset = NULL,
+                                  method = "modelGeneVar", hvgNumber = 0)), 0)
+})

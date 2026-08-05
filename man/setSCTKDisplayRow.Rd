@@ -25,3 +25,18 @@ sce <- subsetSCECols(sce, colData = "type != 'EmptyDroplet'")
 sce <- setSCTKDisplayRow(inSCE = sce, featureDisplayRow = "feature_name")
 plotSCEViolinAssayData(inSCE = sce, feature = "ENSG00000019582")
 }
+\seealso{
+Other accessor functions: 
+\code{\link{getBiomarker}()},
+\code{\link{getDEGTopTable}()},
+\code{\link{getFindMarkerTopTable}()},
+\code{\link{getGenesetNamesFromCollection}()},
+\code{\link{getMSigDBTable}()},
+\code{\link{getPathwayResultNames}()},
+\code{\link{getSceParams}()},
+\code{\link{getSeuratVariableFeatures}()},
+\code{\link{getTopHVG}()},
+\code{\link{sctkListGeneSetCollections}()},
+\code{\link{setRowNames}()}
+}
+\concept{accessor functions}

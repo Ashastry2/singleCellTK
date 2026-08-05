@@ -15,7 +15,7 @@
 #' @export
 #' @examples
 #' data("mouseBrainSubsetSCE")
-#' summarizeSCE(mouseBrainSubsetSCE, sample = NULL)
+#' summarizeSCE(mouseBrainSubsetSCE, sampleVariableName = NULL)
 #' @importFrom SummarizedExperiment assays colData
 summarizeSCE <- function(inSCE, useAssay = NULL, sampleVariableName = NULL){
 

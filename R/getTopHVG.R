@@ -101,7 +101,12 @@ getTopHVG <- function(inSCE,
     }
     
     topGenes <- topGenes[!is.na(topGenes)]
-    topGenes <- topGenes[1:hvgNumber]
+    # `hvgNumber` is only clamped to the available number of features on the
+    # `useFeatureSubset = NULL` branch above. On the `useFeatureSubset` branch it
+    # keeps its default (2000), so indexing with `1:hvgNumber` padded the result
+    # with NA whenever the stored subset was smaller. `1:hvgNumber` was also
+    # wrong for hvgNumber == 0, since `1:0` is `c(1, 0)`.
+    topGenes <- topGenes[seq_len(min(hvgNumber, length(topGenes)))]
 
     return(topGenes)
 }

@@ -45,3 +45,10 @@ the droplet or cell data or both,depending on the dataType that users provided.
 \description{
 Create SingleCellExperiment object from command line input arguments
 }
+\seealso{
+Other QC pipeline: 
+\code{\link{constructSCE}()},
+\code{\link{generateHTANMeta}()},
+\code{\link{generateMeta}()}
+}
+\concept{QC pipeline}

@@ -76,7 +76,28 @@ sce <- importGeneSetsFromCollection(inSCE = sce,
 \link{importGeneSetsFromList} for importing from lists,
 \link{importGeneSetsFromGMT} for importing from GMT files, and
 \link{importGeneSetsFromMSigDB} for importing MSigDB gene sets.
+
+Other import functions: 
+\code{\link{importAlevin}()},
+\code{\link{importAnnData}()},
+\code{\link{importBUStools}()},
+\code{\link{importCellRanger}()},
+\code{\link{importCellRangerV2Sample}()},
+\code{\link{importCellRangerV3Sample}()},
+\code{\link{importDropEst}()},
+\code{\link{importExampleData}()},
+\code{\link{importFromFiles}()},
+\code{\link{importGeneSetsFromGMT}()},
+\code{\link{importGeneSetsFromList}()},
+\code{\link{importGeneSetsFromMSigDB}()},
+\code{\link{importMitoGeneSet}()},
+\code{\link{importMultipleSources}()},
+\code{\link{importOptimus}()},
+\code{\link{importSEQC}()},
+\code{\link{importSTARsolo}()},
+\code{\link{readSingleCellMatrix}()}
 }
 \author{
 Joshua D. Campbell
 }
+\concept{import functions}

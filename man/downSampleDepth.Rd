@@ -60,3 +60,12 @@ res <- downSampleDepth(subset,
                        iterations=2)
 
 }
+\seealso{
+Other simulation functions: 
+\code{\link{calcEffectSizes}()},
+\code{\link{downSampleCells}()},
+\code{\link{generateSimulatedData}()},
+\code{\link{iterateSimulations}()},
+\code{\link{subDiffEx}()}
+}
+\concept{simulation functions}
