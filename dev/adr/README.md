@@ -34,3 +34,4 @@ self-evident from the diff.
 | # | Title | Status | Date |
 |---|---|---|---|
 | [0001](0001-record-architecture-decisions.md) | Record architecture decisions | Proposed | 2026-09-18 |
+| [0002](0002-harmony-version-dispatch.md) | Support both harmony interfaces in runHarmony() by version dispatch | Proposed | 2026-09-20 |
