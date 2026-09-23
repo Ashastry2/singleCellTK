@@ -1,3 +1,11 @@
+Changes in Version 2.19.4 (2026-09-22)
+================================================================================
+* Moved scMerge from Imports to Suggests. It is only used by runSCMerge(), and
+  it cannot currently be installed on all platforms (an unrelated toolchain
+  problem in one of its dependencies), which blocked installing singleCellTK
+  there entirely. runSCMerge() now stops with an informative message if scMerge
+  is not installed.
+
 Changes in Version 2.19.3 (2026-09-20)
 ================================================================================
 * Fixed runHarmony() with harmony >= 1.0.0, where HarmonyMatrix() was removed.

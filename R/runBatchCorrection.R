@@ -762,6 +762,11 @@ integrated = integrated[:, orderIdx]
 #' should be parallelized. Default \code{BiocParallel::SerialParam()}.
 #' @return The input \linkS4class{SingleCellExperiment} object with
 #' \code{assay(inSCE, assayName)} updated.
+#' @details The \code{scMerge} package is suggested rather than required, so
+#' it is not installed with singleCellTK. Install it with
+#' \code{BiocManager::install("scMerge")} before calling this function; it is
+#' unavailable on some platforms, and making it a hard dependency would block
+#' installing singleCellTK there.
 #' @export
 #' @references Hoa, et al., 2020
 #' @examples
@@ -774,6 +779,12 @@ runSCMerge <- function(inSCE, useAssay = "logcounts", batch = 'batch',
                        assayName = "scMerge", hvgExprs = "counts", seg = NULL,
                        kmeansK = NULL, cellType = NULL,
                        BPPARAM = BiocParallel::SerialParam()){
+  if (!requireNamespace("scMerge", quietly = TRUE)) {
+    stop("The scMerge package is required to run this function. ",
+         "Install scMerge with: ",
+         "BiocManager::install('scMerge')",
+         call. = FALSE)
+  }
   ## Input check
   useMat <- .selectSCEMatrix(inSCE, useAssay = useAssay, returnMatrix = TRUE)
   .selectSCEMatrix(inSCE, useAssay = hvgExprs, returnMatrix = FALSE)
