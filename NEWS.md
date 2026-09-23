@@ -1,5 +1,6 @@
 Changes in Version 2.19.4 (2026-09-22)
-================================================================================
+=========================================================================
+
 * Moved scMerge from Imports to Suggests. It is only used by runSCMerge(), and
   it cannot currently be installed on all platforms (an unrelated toolchain
   problem in one of its dependencies), which blocked installing singleCellTK
@@ -20,6 +21,11 @@ Changes in Version 2.19.3 (2026-09-20)
   epsilon.harmony) are no longer accepted through '...'; harmony raises an
   error for them, and they must be passed through
   .options = harmony::harmony_options(...) instead.
+
+Changes in Version 2.19.2 (2026-09-20)
+================================================================================
+* Changed `runScDblFinder()` defaults for `nNeighbors` and `simDoublets` to
+  `NULL`, so scDblFinder chooses these values itself
 
 Changes in Version 2.18.1 (2025-07-01)
 ================================================================================
